@@ -9,7 +9,7 @@
 ---
 
 - HTML
-- CSS
+- SASS
 - JavaScript
 - SwiperJS
 - RemixIcons
@@ -22,6 +22,7 @@
 - [Features](#features)
 - [About](#about)
 - [Contributing](#contributing)
+- [Sass Setup](#sass-setup)
 - [Color Palette](#color-palette)
 - [SwiperJS](#swiperjs)
 - [RemixIcons](#remixicons)
@@ -29,19 +30,21 @@
 - [Commit Log](#commit-log)
 - [Action Items](#action-items)
 
-## Features
+### Features
 
 - Barber's brand website encompassing the spirit of the original Harlem Renaissance.
 - Offers grooming with precision and utilizes Acuity for easy scheduling.
 - Crafted with HTML, CSS, JS, SwiperJS, and RemixIcons.
 
-## About
+### About
 
-The New Harlem Renaissance is a captivating website celebrating the essence of the original Harlem Renaissance. It offers exceptional grooming with precision, and allows easy scheduling through Acuity. The website is expertly crafted with HTML, CSS, JS, SwiperJS, and RemixIcons, delivering a seamless and visually engaging user experience.
+The New Harlem Renaissance is a captivating website celebrating the essence of the original Harlem Renaissance. It offers exceptional grooming with precision, and allows easy scheduling through Acuity. The website is expertly crafted with HTML, SASS, JS, SwiperJS, and RemixIcons, delivering a seamless and visually engaging user experience.
 
-## Contributing
+### Contributing
 
 As this is a personal website, contributions are limited. If you find any issues or have suggestions, please open an issue.
+
+## Design
 
 ### Color Palette
 
@@ -50,7 +53,11 @@ As this is a personal website, contributions are limited. If you find any issues
 - --harlemren-yellow: #fff903
 - --harlemren-gray: #8c8c8c
 
-## SwiperJS
+## Sass Setup
+
+The project uses Sass for more efficient styling. Edit the `assets/scss/main.scss` file for style changes. The Live Sass Compiler extension in Visual Studio Code compiles this to `assets/css/main.css` automatically upon save.
+
+### SwiperJS
 
 The website utilizes SwiperJS for its smooth carousel effects. The following JavaScript library is included:
 
@@ -60,7 +67,7 @@ The website utilizes SwiperJS for its smooth carousel effects. The following Jav
 
 For more information on using SwiperJS, visit the [SwiperJS website](https://swiperjs.com/get-started).
 
-## RemixIcons
+### RemixIcons
 
 The website incorporates RemixIcons for its extensive collection of icons. The icons are included directly in the HTML and CSS files using the Remixicon CDN.
 
@@ -70,11 +77,19 @@ The website incorporates RemixIcons for its extensive collection of icons. The i
 
 For more information on using RemixIcons and exploring available icons, visit the [Remixicon github](https://github.com/Remix-Design/RemixIcon) and/or the [Remixicon Website](https://remixicon.com/).
 
-## Acuity
+### Acuity
 
 The website uses Acuity for easy appointment scheduling. Users can conveniently book grooming services through Acuity.
 
 ## Commit Log
+
+7/24/23
+
+- MAIN: Project Setup - Setup SASS
+  - 1. Integrated Google Fonts for typography
+  - 2. Integrated SASS with CSS variables and organized sections with comments
+  - 3. Updated Remixicon CDN for extensive icons use
+  - 4. Added additional images and videos for future use
 
 7/19/23
 
