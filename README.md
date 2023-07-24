@@ -35,6 +35,7 @@
 - Barber's brand website encompassing the spirit of the original Harlem Renaissance.
 - Offers grooming with precision and utilizes Acuity for easy scheduling.
 - Crafted with HTML, CSS, JS, SwiperJS, and RemixIcons.
+- Interactive Mobile Navigation
 
 ### About
 
@@ -46,12 +47,16 @@ As this is a personal website, contributions are limited. If you find any issues
 
 ## Design
 
+The mobile navigation menu features a hamburger button (menu open toggle) and a close button (menu close toggle). When the hamburger button is clicked, the navigation menu expands, revealing the site's navigation links. Clicking the close button will hide the navigation menu.
+
+The toggling functionality for the navigation menu is implemented in JavaScript. The `nav-toggle` and `nav-close` button elements listen for click events, which add or remove the `show-menu` CSS class to/from the `nav-menu` element, thereby showing or hiding the menu.
+
 ### Color Palette
 
-- --harlemren-blue: #0103d0
-- --harlemren-red: #fd050b
-- --harlemren-yellow: #fff903
-- --harlemren-gray: #8c8c8c
+- --hr-blue: #0103d0
+- --hr-red: #fd050b
+- --hr-yellow: #fff903
+- --hr-gray: #8c8c8c
 
 ## Sass Setup
 
@@ -84,6 +89,8 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 ## Commit Log
 
 7/24/23
+
+- FEAT(headernav): Added mobile navigation with open/close toggles and link interaction. Navigation links now close the mobile menu when clicked.
 
 - MAIN: Project Setup - Setup SASS
   - 1. Integrated Google Fonts for typography
