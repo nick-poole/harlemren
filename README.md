@@ -92,15 +92,17 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 
 7/25/23
 
-- FEAT: Create 'About' section with imagery and 'Book Now' CTA
+- FEAT(mto): Add Meet the Owner section with banner image, blockquote,and experience stats
+
+- FEAT(about): Create 'About' section with imagery and 'Book Now' CTA
 
 7/24/23
 
-- FEAT(header): Added dynamic class 'scroll-header' to header on scroll
+- FEAT(header): Add dynamic class 'scroll-header' to header on scroll
 
-- FEAT(home): Added home section with background image and product box. Set global styling for website buttons.
+- FEAT(home): Add home section with background image and product box. Set global styling for website buttons.
 
-- FEAT(headernav): Added mobile navigation with open/close toggles and link interaction. Navigation links now close the mobile menu when clicked.
+- FEAT(headernav): Add mobile navigation with open/close toggles and link interaction. Navigation links now close the mobile menu when clicked.
 
 - MAIN: Project Setup - Setup SASS
   - 1. Integrated Google Fonts for typography
@@ -115,3 +117,5 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 - Initial Commit
 
 ## Action Items
+
+- Incorporate reusable paragraph styles to maintain consistent text formatting across different sections of the site.

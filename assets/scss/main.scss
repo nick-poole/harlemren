@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:ital,wght@0,500;0,600;0,700;1,500&display=swap");
 
 /*=============== CSS VARIABLES ===============*/
 :root {
@@ -17,7 +17,7 @@
     --first-color: hsl(var(--hue-color), 84%, 29%);
     --first-color-second: hsl(var(--hue-color), 64%, 22%);
     --first-color-alt: hsl(var(--hue-color), 64%, 15%);
-    --sec-color: hsl(27,89%,58%)
+    --sec-color: hsl(27, 89%, 58%);
     --title-color: hsl(var(--hue-color), 64%, 18%);
     --text-color: hsl(var(--hue-color), 24%, 35%);
     --text-color-light: hsl(var(--hue-color), 8%, 60%);
@@ -144,11 +144,20 @@ input {
 }
 
 .section__title {
-    font-size: var(--h2-font-size);
+    font-size: var(--biggest-font-size);
     color: var(--title-color);
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: var(--mb-1);
+}
+
+.section__subtitle {
+    display: block;
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-2);
+    text-align: center;
+    color: var(--sec-color);
 }
 
 .container {
@@ -160,6 +169,35 @@ input {
 .grid {
     display: grid;
     gap: 1.5rem;
+}
+
+.blockquote {
+    width: 60%;
+    margin: 50px auto;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid;
+
+    background: #ededed;
+    font-size: var(--h2-font-size);
+    font-family: var(--title-font);
+    line-height: 1.6;
+    font-style: italic;
+    position: relative;
+
+    &::before {
+        font-size: 4em;
+        position: absolute;
+        content: "\201C";
+        left: 10px;
+        top: -10px;
+    }
+
+    span {
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 1em;
+    }
 }
 
 /*=============== HEADER ===============*/
@@ -241,20 +279,18 @@ input {
     }
 }
 
-
-
 /* show menu */
 .show-menu {
     right: 0;
 }
 
 /* Change background header */
-.scroll-header{
+.scroll-header {
     background-color: var(--body-color);
-    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, .1);
+    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 0.1);
 
     & .nav__logo,
-    & .nav__toggle{
+    & .nav__toggle {
         color: var(--title-color);
     }
 }
@@ -355,26 +391,26 @@ input {
     color: var(--white-color);
     padding: 1rem 2rem;
     font-weight: var(--font-semi-bold);
-    transition: .3s;
-    -webkit-transition: .3s;
-    -moz-transition: .3s;
-    -ms-transition: .3s;
-    -o-transition: .3s;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 
-    &:hover{
+    &:hover {
         background-color: var(--first-color-alt);
     }
 
-    &--flex{
+    &--flex {
         display: flex;
         align-items: center;
-        column-gap: .25rem;
+        column-gap: 0.25rem;
     }
-    &--link{
+    &--link {
         background: none;
         padding: 0;
 
-        &:hover{
+        &:hover {
             background: none;
         }
     }
@@ -382,17 +418,17 @@ input {
 
 /*=============== ABOUT ===============*/
 .about {
-    &__data{
+    &__data {
         text-align: center;
     }
-    &__container{
+    &__container {
         row-gap: 2.5rem;
     }
-    &__description{
+    &__description {
         margin-bottom: var(--mb-2);
     }
 
-    &__banner{
+    &__banner {
         width: 100%;
     }
 
@@ -402,19 +438,18 @@ input {
         align-items: center;
         justify-content: center;
 
-        &-overlay{
+        &-overlay {
             overflow: var(--img-hidden);
         }
 
-        &-one{
+        &-one {
             width: 160px;
-        
         }
-        &-two{
+        &-two {
             width: 200px;
         }
         &-one,
-        &-two{
+        &-two {
             transition: var(--img-transition);
             -webkit-transition: var(--img-transition);
             -moz-transition: var(--img-transition);
@@ -423,7 +458,7 @@ input {
         }
 
         &-one:hover,
-        &-two:hover{
+        &-two:hover {
             transform: var(--img-scale);
             -webkit-transform: var(--img-scale);
             -moz-transform: var(--img-scale);
@@ -433,10 +468,56 @@ input {
     }
 }
 
+/*=============== MEET THE OWNER ===============*/
+.mto {
+    &__name {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        font-size: var(--h2-font-size);
+    }
+    &__license {
+        font-size: var(--h3-font-size);
+        color: var(--sec-color);
+        margin-bottom: var(--mb-0-25);
+    }
+    &__subtitle {
+    }
+
+    &__container {
+        row-gap: 2.5rem;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    &__content {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+        justify-items: center;
+        padding: 0 2rem;
+        margin-top: 1rem;
+    }
+    &__data {
+        &-rmx {
+            display: block;
+            font-size: 1.5rem;
+            margin: 1rem auto;
+        }
+        &-description {
+        }
+    }
+    &__number {
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-semi-bold);
+        margin-bottom: var(--mb-0-5);
+    }
+    &__description {
+        font-size: var(--font-medium);
+    }
+    &__description.first-paragraph {
+        text-indent: 30px;
+    }
+}
 
 /*=============== DISCOVER ===============*/
-
-/*=============== EXPERIENCE ===============*/
 
 /*=============== VIDEO ===============*/
 
