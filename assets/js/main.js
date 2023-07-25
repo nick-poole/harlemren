@@ -11,10 +11,12 @@ if (navToggle) {
     });
 }
 
-/*===== MENU HIDDEN =====*/
+/*===== CLOSE MENU =====*/
 /*If_________exists */
 if (navClose) {
+    // Clicking on navClose v
     navClose.addEventListener("click", () => {
+        // removes show-menu class
         navMenu.classList.remove("show-menu");
     });
 }

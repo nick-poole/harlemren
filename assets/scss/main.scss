@@ -381,6 +381,57 @@ input {
 }
 
 /*=============== ABOUT ===============*/
+.about {
+    &__data{
+        text-align: center;
+    }
+    &__container{
+        row-gap: 2.5rem;
+    }
+    &__description{
+        margin-bottom: var(--mb-2);
+    }
+
+    &__banner{
+        width: 100%;
+    }
+
+    &__img {
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        &-overlay{
+            overflow: var(--img-hidden);
+        }
+
+        &-one{
+            width: 160px;
+        
+        }
+        &-two{
+            width: 200px;
+        }
+        &-one,
+        &-two{
+            transition: var(--img-transition);
+            -webkit-transition: var(--img-transition);
+            -moz-transition: var(--img-transition);
+            -ms-transition: var(--img-transition);
+            -o-transition: var(--img-transition);
+        }
+
+        &-one:hover,
+        &-two:hover{
+            transform: var(--img-scale);
+            -webkit-transform: var(--img-scale);
+            -moz-transform: var(--img-scale);
+            -ms-transform: var(--img-scale);
+            -o-transform: var(--img-scale);
+        }
+    }
+}
 
 
 /*=============== DISCOVER ===============*/

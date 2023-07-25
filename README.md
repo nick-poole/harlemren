@@ -90,6 +90,10 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 
 ## Commit Log
 
+7/25/23
+
+- FEAT: Create 'About' section with imagery and 'Book Now' CTA
+
 7/24/23
 
 - FEAT(header): Added dynamic class 'scroll-header' to header on scroll
