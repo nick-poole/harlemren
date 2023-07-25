@@ -13,7 +13,7 @@
 - JavaScript
 - SwiperJS
 - RemixIcons
-- Acuity
+- Acuity Scheduling
 
 ## Table of Contents
 
@@ -89,6 +89,8 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 ## Commit Log
 
 7/24/23
+
+- FEAT(home): Added home section with background image and product box. Set global styling for website buttons.
 
 - FEAT(headernav): Added mobile navigation with open/close toggles and link interaction. Navigation links now close the mobile menu when clicked.
 
