@@ -31,8 +31,16 @@ function linkAction() {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*================ CHANGE BACKGROUND HEADER ================*/
-
-// When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
+function scrollHeader() {
+    const header = document.getElementById("header");
+    // If the scroll is greater than 100 viewport height, v
+    if (this.scrollY >= 100)
+        //add the scroll-header class to the header tag
+        header.classList.add("scroll-header");
+    //else remove
+    else header.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", scrollHeader);
 
 /*==================== SWIPER DISCOVER ====================*/
 

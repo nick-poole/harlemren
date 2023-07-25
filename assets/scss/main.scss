@@ -3,7 +3,7 @@
 
 /*=============== CSS VARIABLES ===============*/
 :root {
-    --header-height: 3rem;
+    --header-height: 4.5rem;
 
     /*========== Colors ==========*/
     --hue-color: 177;
@@ -17,7 +17,6 @@
     --first-color: hsl(var(--hue-color), 84%, 29%);
     --first-color-second: hsl(var(--hue-color), 64%, 22%);
     --first-color-alt: hsl(var(--hue-color), 64%, 15%);
-
     --sec-color: hsl(27,89%,58%)
     --title-color: hsl(var(--hue-color), 64%, 18%);
     --text-color: hsl(var(--hue-color), 24%, 35%);
@@ -188,6 +187,10 @@ input {
 
     &__logo {
         font-weight: var(--font-semi-bold);
+        &-img {
+            height: 75px;
+            width: 75px;
+        }
     }
 
     &__toggle {
@@ -238,12 +241,23 @@ input {
     }
 }
 
+
+
 /* show menu */
 .show-menu {
     right: 0;
 }
 
 /* Change background header */
+.scroll-header{
+    background-color: var(--body-color);
+    box-shadow: 0 0 4px hsla(var(--hue-color), 64%, .1);
+
+    & .nav__logo,
+    & .nav__toggle{
+        color: var(--title-color);
+    }
+}
 
 /* Active link */
 

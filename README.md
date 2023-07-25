@@ -35,7 +35,9 @@
 - Barber's brand website encompassing the spirit of the original Harlem Renaissance.
 - Offers grooming with precision and utilizes Acuity for easy scheduling.
 - Crafted with HTML, CSS, JS, SwiperJS, and RemixIcons.
-- Interactive Mobile Navigation
+- **Interactive Navigation Menu**: The site includes a responsive mobile navigation menu with open/close toggles, implemented using JavaScript. Clicking a navigation link also automatically closes the menu, enhancing usability, particularly for single-page navigation.
+
+- **Dynamic Header**: The header dynamically adjusts its style upon scrolling, providing visual feedback and enhancing user experience. This is implemented using JavaScript to add or remove a CSS class based on the scroll position.
 
 ### About
 
@@ -89,6 +91,8 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 ## Commit Log
 
 7/24/23
+
+- FEAT(header): Added dynamic class 'scroll-header' to header on scroll
 
 - FEAT(home): Added home section with background image and product box. Set global styling for website buttons.
 
