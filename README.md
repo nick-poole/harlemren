@@ -105,6 +105,8 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 
 7/26/23
 
+- FEAT(acuity): Add Appointments section with Acuity placeholder; adjust section order
+
 - FEAT(vip): Create VIP, subscribe, and sponsors sections. Temporarily comment out formspree form pending client discussion.
 
 7/25/23
