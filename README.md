@@ -18,17 +18,19 @@
 ## Table of Contents
 
 - [The New Harlem Renaissance Website](#the-new-harlem-renaissance)
-- [[thenewharlemrenaissance.com](https://thenewharlemrenaissance.com)](#-thenewharlemrenaissancecom--https---thenewharlemrenaissancecom-)
+- [thenewharlemrenaissance.com](https://thenewharlemrenaissance.com)
 - [Features](#features)
 - [About](#about)
 - [Contributing](#contributing)
 - [Sass Setup](#sass-setup)
 - [Color Palette](#color-palette)
-- [SwiperJS](#swiperjs)
+- [SwiperJS](#swiperjs-integration)
 - [RemixIcons](#remixicons)
 - [Acuity](#acuity)
 - [Commit Log](#commit-log)
 - [Action Items](#action-items)
+
+---
 
 ### Features
 
@@ -64,12 +66,23 @@ The toggling functionality for the navigation menu is implemented in JavaScript.
 
 The project uses Sass for more efficient styling. Edit the `assets/scss/main.scss` file for style changes. The Live Sass Compiler extension in Visual Studio Code compiles this to `assets/css/main.css` automatically upon save.
 
-### SwiperJS
+## SwiperJS Integration
 
-The website utilizes SwiperJS for its smooth carousel effects. The following JavaScript library is included:
+The website utilizes SwiperJS for its smooth carousel effects. Here are the steps for setting up SwiperJS:
+
+1. Download the package from [SwiperJS's jsDelivr page](https://www.jsdelivr.com/package/npm/swiper).
+
+2. From the downloaded package, we specifically use `swiper-bundle.min.css` and `swiper-bundle.min.js`.
+
+3. Place `swiper-bundle.min.css` in the `assets/css` folder.
+
+4. Place `swiper-bundle.min.js` in the `assets/js` folder.
+
+5. Link these files in the `index.html`:
 
 ```html
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+<script src="assets/js/swiper-bundle.min.js"></script>
 ```
 
 For more information on using SwiperJS, visit the [SwiperJS website](https://swiperjs.com/get-started).
@@ -91,6 +104,8 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 ## Commit Log
 
 7/25/23
+
+- FEAT(services): Create Services section with SwiperJS carousel and tiered service offerings
 
 - FEAT(mto): Add Meet the Owner section with banner image, blockquote,and experience stats
 

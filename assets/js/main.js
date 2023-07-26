@@ -1,4 +1,4 @@
-/*==================== SHOW MENU ====================*/
+/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
     navToggle = document.getElementById("nav-toggle"),
     navClose = document.getElementById("nav-close");
@@ -21,7 +21,7 @@ if (navClose) {
     });
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*============= REMOVE MENU MOBILE =============*/
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -32,7 +32,7 @@ function linkAction() {
 //For each nav link click ^
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*================ CHANGE BACKGROUND HEADER ================*/
+/*========== CHANGE BACKGROUND HEADER ==========*/
 function scrollHeader() {
     const header = document.getElementById("header");
     // If the scroll is greater than 100 viewport height, v
@@ -44,14 +44,26 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== SWIPER DISCOVER ====================*/
+/*=============== SWIPER SERVICES ===============*/
+let swiper = new Swiper(".service__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: false,
+    spaceBetween: 10,
+    coverflowEffect: {
+        rotate: 0,
+        slideShadows: true,
+    },
+});
 
-/*==================== VIDEO ====================*/
+/*================= VIDEO =================*/
 
-/*==================== SHOW SCROLL UP ====================*/
+/*=============== SHOW SCROLL UP ===============*/
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*========= SCROLL SECTIONS ACTIVE LINK =========*/
 
-/*==================== SCROLL REVEAL ANIMATION ====================*/
+/*==========  SCROLL REVEAL ANIMATION ========== */
 
-/*==================== DARK LIGHT THEME ====================*/
+/*============== DARK LIGHT THEME ==============*/
