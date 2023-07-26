@@ -677,6 +677,53 @@ input {
 /*=============== APPOINTMENTS ===============*/
 
 /*=============== FOOTER ===============*/
+.footer {
+    &__container {
+        row-gap: 5rem;
+    }
+    &__logo {
+        max-width: 220px;
+        height: auto;
+    }
+    &__content {
+        margin-left: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        row-gap: 2rem;
+    }
+    &__title,
+    &__subtitle {
+        font-size: var(--h3-font-size);
+    }
+    &__title {
+        margin-bottom: var(--mb-0-5);
+    }
+    &__description {
+        margin-bottom: var(--mb-0-75);
+    }
+    &__social {
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-right: var(--mb-1-25);
+    }
+    &__subtitle {
+        margin-bottom: var(--mb-1);
+    }
+    &__item {
+        margin-bottom: var(--mb-0-75);
+    }
+    &__link {
+        color: var(--text-color);
+        &:hover {
+            color: var(--sec-color);
+        }
+    }
+    &__rights {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        text-align: center;
+    }
+}
 
 /*========== SCROLL UP ==========*/
 

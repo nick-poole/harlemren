@@ -105,6 +105,8 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 
 7/26/23
 
+- FEAT(footer): Add Footer, Terms and Conditions, and Privacy Policy pages.
+
 - FEAT(acuity): Add Appointments section with Acuity placeholder; adjust section order
 
 - FEAT(vip): Create VIP, subscribe, and sponsors sections. Temporarily comment out formspree form pending client discussion.
@@ -144,3 +146,5 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 - Add menu section to navigation
 
 - Adjust id scroll hitbox.
+
+- Finalize Terms and Privacy Policy Pages
