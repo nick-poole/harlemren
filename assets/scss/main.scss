@@ -140,7 +140,7 @@ input {
 
 /*=============== REUSABLES ===============*/
 .section {
-    padding: 4.5rem 0 2.5rem;
+    padding: 2rem 0 2.5rem;
 }
 
 .section__title {
@@ -604,14 +604,77 @@ input {
     }
 }
 
-/*=============== VIDEO ===============*/
+/*=============== VIP ===============*/
+.video {
+    &__container {
+        padding-bottom: 1rem;
+    }
+    &__description {
+        margin-bottom: var(--mb-2-5);
+    }
+}
 
-/*=============== PLACES ===============*/
+// #contact-form {
+//     display: flex;
+//     flex-direction: column;
+//     .form-group {
+//         margin-bottom: 15px;
+//     }
+//     label {
+//         display: block;
+//         margin-bottom: 5px;
+//     }
+//     input {
+//         width: 100%;
+//         padding: 10px;
+//         border: 1px solid #ccc;
+//         border-radius: 4px;
+//     }
+//     input[type="submit"] {
+//         background-color: #333;
+//         color: white;
+//         cursor: pointer;
+//     }
+//     input[type="submit"]:hover {
+//         background-color: #444;
+//     }
+// }
 
 /*=============== SUBSCRIBE ===============*/
+.subscribe {
+    &__bg {
+        background-color: var(--first-color);
+        padding: 2.5rem 0;
+    }
+    &__title,
+    &__description {
+        color: var(--white-color);
+    }
+
+    &__disclaimer {
+        color: var(--sec-color);
+        font-weight: var(--font-semi-bold);
+    }
+}
 
 /*=============== SPONSORS/AFFILIATES ===============*/
+.sponsor {
+    &__container {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        justify-items: center;
+        row-gap: 3.5rem;
+    }
+    &__img {
+        //width: 90px;
+        transition: var(--img-transition);
+        -webkit-transition: var(--img-transition);
+        -moz-transition: var(--img-transition);
+        -ms-transition: var(--img-transition);
+        -o-transition: var(--img-transition);
+    }
+}
 
+/*=============== PLACES ===============*/
 /*=============== FOOTER ===============*/
 
 /*========== SCROLL UP ==========*/
@@ -636,4 +699,4 @@ input {
 /* For medium devices */
 /* For large devices */
 
-/* For tall screens on mobiles y desktop*/
+/* For tall screens on mobile & desktop*/

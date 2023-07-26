@@ -58,8 +58,6 @@ let swiper = new Swiper(".service__container", {
     },
 });
 
-/*================= VIDEO =================*/
-
 /*=============== SHOW SCROLL UP ===============*/
 
 /*========= SCROLL SECTIONS ACTIVE LINK =========*/

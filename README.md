@@ -103,6 +103,10 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 
 ## Commit Log
 
+7/26/23
+
+- FEAT(vip): Create VIP, subscribe, and sponsors sections. Temporarily comment out formspree form pending client discussion.
+
 7/25/23
 
 - FEAT(services): Create Services section with SwiperJS carousel and tiered service offerings
@@ -134,3 +138,7 @@ The website uses Acuity for easy appointment scheduling. Users can conveniently 
 ## Action Items
 
 - Incorporate reusable paragraph styles to maintain consistent text formatting across different sections of the site.
+
+- Add menu section to navigation
+
+- Adjust id scroll hitbox.
