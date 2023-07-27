@@ -55,7 +55,7 @@
               <a href="#vip" class="nav__link">Royalty Club</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#cta" class="nav__link">Contact</a>
             </li>
           </ul>
 
@@ -135,8 +135,8 @@
         </div>
       </section>
 
-      <div class="about__banner">
-        <img src="assets/images/teenie_harris-carnegie.jpg" alt="" class="about__banner-img">
+      <div class="banner">
+        <img src="assets/images/teenie_harris-carnegie.jpg" alt="" class="banner-img">
       </div>
 
       <section class="about section">
@@ -418,11 +418,87 @@
           </div>
         </div>
       </section>
+
+      <div class="banner">
+        <img src="assets/images/harlem-new-york-public-library.jpg" alt="" class="banner-img">
+      </div>
+
+
+
+      <h2 class="section__title">Contact</h2>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section container " id="cta">
+        <div class="contact__container grid">
+          <!-- <img src="assets/images/agustin-fernandez.jpg" alt="" class="contact__img"> -->
+
+          <div class="contact__box">
+            <p class="contact__description par f-par">
+              Kennard is the dedicated professional behind The New Harlem Renaissance and he values your input,
+              questions, and concerns. Whether you're looking to learn more about the services, schedule appointments,
+              or share your grooming experiences, Kennard is ready to assist.
+            </p>
+
+            <p class="contact__description par ">
+              You can directly contact him via email or
+              phone, or visit him at the Nile Style Barbershop. Alternatively, the contact form below can be used for
+              any inquiries. Kennard looks forward to your correspondence.
+            </p>
+
+            <div class="contact__data">
+              <h3 class="contact__subtitle">Reach Out</h3>
+              <span class="contact__info">
+                <i class="ri-phone-line contact__icon"></i>
+                <a class="contact__tel" href="tel:+14108675309">(410) 867-5309</a>
+              </span>
+            </div>
+
+            <div class="contact__data">
+              <h3 class="contact__subtitle">Send an Email</h3>
+              <span class="contact__info">
+                <i class="ri-mail-send-line contact__icon"></i>
+                <a href="mailto:kennard@newharlemrenaissance.com"
+                  class="contact__email">kennard@newharlemrenaissance.com</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formspree.io/f/mnqknkbj" method="POST" class="contact__form" id="contact">
+          <div class="contact__inputs">
+            <div class="contact__content">
+              <input type="text" placeholder=" " class="contact__field" name="user_name" id="name">
+              <label for="name" class="contact__label name">Name</label>
+            </div>
+
+            <div class="contact__content">
+              <input type="email" placeholder=" " class="contact__field" name="user_email" id="email">
+              <label for="email" class="contact__label email">Email</label>
+            </div>
+
+            <div class="contact__content">
+              <input type="text" placeholder=" " class="contact__field" name="subject" id="subject">
+              <label for="subject" class="contact__label subject">Subject</label>
+            </div>
+
+            <div class="contact__content contact__area">
+              <textarea placeholder=" " class="contact__field" name="message" id="message"></textarea>
+              <label for="message" class="contact__label message">Message</label>
+            </div>
+          </div>
+
+          <button class="button button--flex" type="submit" value="send">
+            Submit<i class="ri-mail-send-line button__icon"></i>
+          </button>
+        </form>
+
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
       <div class="footer__container container grid">
+
         <div class="footer__content grid">
 
 

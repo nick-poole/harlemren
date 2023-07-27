@@ -14,6 +14,7 @@
 - SwiperJS
 - RemixIcons
 - Acuity Scheduling
+- Formspree
 
 ## Table of Contents
 
@@ -27,6 +28,7 @@
 - [SwiperJS](#swiperjs-integration)
 - [RemixIcons](#remixicons)
 - [Acuity](#acuity)
+- [Formspree Integration](#formspree-integration)
 - [Commit Log](#commit-log)
 - [Action Items](#action-items)
 
@@ -101,9 +103,19 @@ For more information on using RemixIcons and exploring available icons, visit th
 
 The website uses Acuity for easy appointment scheduling. Users can conveniently book grooming services through Acuity.
 
+### Formspree Integration
+
+Formspree handles submissions from the Contact Form.
+
+```html
+<form action="https://formspree.io/f/{your_form_id}" method="POST">
+```
+
 ## Commit Log
 
 7/26/23
+
+- FEAT(cta): Add and style contact section with Formspree integration
 
 - FEAT(footer): Add Footer, Terms and Conditions, and Privacy Policy pages.
 
