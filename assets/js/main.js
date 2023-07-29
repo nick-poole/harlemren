@@ -59,8 +59,39 @@ let swiper = new Swiper(".service__container", {
 });
 
 /*=============== SHOW SCROLL UP ===============*/
+function scrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
+    // When the scroll is higher than 200 viewport height
+    if (this.scrollY >= 200)
+        //add the show-scroll class to the a tag
+        scrollUp.classList.add("show-scroll");
+    // else remove
+    else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUp);
 
 /*========= SCROLL SECTIONS ACTIVE LINK =========*/
+
+function scrollActive() {
+    const sections = document.querySelectorAll("section[id], article[id]");
+
+    const scrollY = window.scrollY;
+
+    sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.add("active-link");
+        } else {
+            document
+                .querySelector(`.nav__menu a[href*=${sectionId}]`)
+                .classList.remove("active-link");
+        }
+    });
+}
+window.addEventListener("scroll", scrollActive);
 
 /*==========  SCROLL REVEAL ANIMATION ========== */
 

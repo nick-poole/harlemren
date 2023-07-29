@@ -40,8 +40,9 @@
 - Offers grooming with precision and utilizes Acuity for easy scheduling.
 - Crafted with HTML, CSS, JS, SwiperJS, and RemixIcons.
 - **Interactive Navigation Menu**: The site includes a responsive mobile navigation menu with open/close toggles, implemented using JavaScript. Clicking a navigation link also automatically closes the menu, enhancing usability, particularly for single-page navigation.
-
+- **Scroll-Up Button**: A dynamic scroll up button allowing for quick and easy navigation back to the top of the page.
 - **Dynamic Header**: The header dynamically adjusts its style upon scrolling, providing visual feedback and enhancing user experience. This is implemented using JavaScript to add or remove a CSS class based on the scroll position.
+- **Active Section Indicator**:This feature dynamically highlights the navigation menu item corresponding to the section currently in view on the page, aiding user orientation within the site.
 
 ### About
 
@@ -114,6 +115,8 @@ Formspree handles submissions from the Contact Form.
 ## Commit Log
 
 7/29/23
+
+- FEAT(headernav): Implemented Scroll-Up Button and Active Scroll Section Indicator
 
 - FEAT(cta): Enhance contact section layout with CSS grid and restyle contact form.
 

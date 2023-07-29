@@ -281,15 +281,14 @@ input {
         row-gap: 2.5rem;
     }
     &__link {
-        //--text-color-light
-        color: var(--text-color);
         font-weight: var(--font-semi-bold);
         text-transform: uppercase;
+        color: var(--text-color);
 
         &:hover {
             // color: var(--text-color);
-            color: var(--text-color-light);
-            text-decoration: overline;
+            color: var(--sec-color);
+            //text-decoration: overline;
         }
     }
     &__close {
@@ -319,6 +318,20 @@ input {
 }
 
 /* Active link */
+.active-link {
+    position: relative;
+    color: var(--sec-color);
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: var(--sec-color);
+        width: 100%;
+        height: 2px;
+        bottom: -0.75rem;
+        left: 0;
+    }
+}
 
 /*=============== HOME ===============*/
 .home {
@@ -853,6 +866,44 @@ input {
 }
 
 /*========== SCROLL UP ==========*/
+.scrollup {
+    display: flex;
+    position: fixed;
+    right: 2rem;
+    bottom: -20%;
+    //bottom: 5rem;
+    padding: 0.5rem;
+
+    background-color: var(--first-color);
+    opacity: 0.9;
+
+    z-index: var(--z-tooltip);
+
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+
+    &:hover {
+        background-color: var(--first-color);
+        opacity: 1;
+    }
+
+    &__icon {
+        color: var(--white-color);
+        font-size: 2.2rem;
+
+        &:hover {
+            color: var(--sec-color);
+        }
+    }
+}
+
+/* Show Scroll*/
+.show-scroll {
+    bottom: 5rem;
+}
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
