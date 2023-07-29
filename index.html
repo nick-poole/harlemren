@@ -423,16 +423,13 @@
         <img src="assets/images/harlem-new-york-public-library.jpg" alt="" class="banner-img">
       </div>
 
-
-
-      <h2 class="section__title">Contact</h2>
-
       <!--==================== CONTACT ====================-->
       <section class="contact section container " id="cta">
+        <h2 class="section__title">Contact</h2>
         <div class="contact__container grid">
           <!-- <img src="assets/images/agustin-fernandez.jpg" alt="" class="contact__img"> -->
 
-          <div class="contact__box">
+          <div class="contact__content grid">
             <p class="contact__description par f-par">
               Kennard is the dedicated professional behind The New Harlem Renaissance and he values your input,
               questions, and concerns. Whether you're looking to learn more about the services, schedule appointments,
@@ -462,35 +459,18 @@
               </span>
             </div>
           </div>
+
+          <form class="form" id="form" action="https://formspree.io/f/mnqknkbj" method="POST">
+
+            <input class="form__field" id="name" type="text" placeholder="NAME">
+            <input class="form__field" id="email" type="text" placeholder="E-MAIL">
+            <input class="form__field" id="subject" type="text" placeholder="SUBJECT">
+
+            <textarea class="form__message" id="message" type="text" placeholder="MESSAGE"></textarea>
+
+            <input class="form__field form__submit" id="submit" type="submit" value="SEND">
+          </form>
         </div>
-
-        <form action="https://formspree.io/f/mnqknkbj" method="POST" class="contact__form" id="contact">
-          <div class="contact__inputs">
-            <div class="contact__content">
-              <input type="text" placeholder=" " class="contact__field" name="user_name" id="name">
-              <label for="name" class="contact__label name">Name</label>
-            </div>
-
-            <div class="contact__content">
-              <input type="email" placeholder=" " class="contact__field" name="user_email" id="email">
-              <label for="email" class="contact__label email">Email</label>
-            </div>
-
-            <div class="contact__content">
-              <input type="text" placeholder=" " class="contact__field" name="subject" id="subject">
-              <label for="subject" class="contact__label subject">Subject</label>
-            </div>
-
-            <div class="contact__content contact__area">
-              <textarea placeholder=" " class="contact__field" name="message" id="message"></textarea>
-              <label for="message" class="contact__label message">Message</label>
-            </div>
-          </div>
-
-          <button class="button button--flex" type="submit" value="send">
-            Submit<i class="ri-mail-send-line button__icon"></i>
-          </button>
-        </form>
 
       </section>
     </main>

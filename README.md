@@ -113,6 +113,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+7/29/23
+
+- FEAT(cta): Enhance contact section layout with CSS grid and restyle contact form.
+
 7/26/23
 
 - FEAT(cta): Add and style contact section with Formspree integration

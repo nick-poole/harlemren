@@ -14,15 +14,16 @@
     --hr-gray: #8c8c8c;
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 84%, 29%);
-    --first-color-second: hsl(var(--hue-color), 64%, 22%);
-    --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+    --first-color: hsl(177, 84%, 29%);
+    --first-color-light: hsl(177, 64%, 43%);
+    --first-color-second: hsl(177, 64%, 22%);
+    --first-color-alt: hsl(177, 64%, 15%);
     --sec-color: hsl(27, 89%, 58%);
-    --title-color: hsl(var(--hue-color), 64%, 18%);
-    --text-color: hsl(var(--hue-color), 24%, 35%);
-    --text-color-light: hsl(var(--hue-color), 8%, 60%);
-    --input-color: hsl(var(--hue-color), 24%, 97%);
-    --body-color: hsl(var(--hue-color), 100%, 99%);
+    --title-color: hsl(177, 64%, 18%);
+    --text-color: hsl(177, 24%, 35%);
+    --text-color-light: hsl(177, 8%, 60%);
+    --input-color: hsl(177, 64%, 17%);
+    --body-color: hsl(177, 100%, 99%);
     --white-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
@@ -693,25 +694,18 @@ input {
 
 /*=============== CONTACT ===============*/
 .contact {
-    &__img {
-        // max-width: 300px;
-        // width: 100%;
+    &__container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 2rem;
     }
 
-    &__container {
-        grid-template-columns: 3fr 1fr;
-        // flex-direction: row;
-        // justify-content: center;
-        // align-items: center;
-    }
-    // &__box {
-    // }
     &__description {
         font-weight: var(--font-semi-bold);
     }
     &__content {
-        display: grid;
-        row-gap: 1rem;
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     &__data {
         display: grid;
@@ -726,7 +720,7 @@ input {
     }
 
     &__icon {
-        font-size: 1.25rem;
+        font-size: 2rem;
         padding: 0 1rem;
     }
 
@@ -734,70 +728,77 @@ input {
     &__email {
         color: var(--sec-color);
     }
+}
 
-    &__form {
+.form {
+    width: 100%;
+    max-width: 500px;
+    margin: 25px auto;
+
+    &__field,
+    &__message,
+    &__submit {
         width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 2rem;
-    }
+        padding: 15px;
 
-    &__inputs {
-        display: grid;
-        row-gap: 2rem;
-        margin-bottom: var(--mb-2-5);
-    }
+        outline: none;
 
-    &__content {
-        position: relative;
-        height: 3rem;
-        border-bottom: 1px solid var(--text-color-light);
+        font-family: "Lato", sans-serif;
+        font-size: 0.875em;
+
+        background-color: var(--body-color);
+        border: solid 1px var(--text-color);
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+
+        &,
+        &::placeholder {
+            color: var(--text-color-light);
+            font-size: 0.875em;
+        }
+
+        &:focus::placeholder {
+            background-color: var(--sec-color);
+            color: var(--input-color);
+        }
+
+        &:hover {
+            background: var(--text-color-light);
+            color: var(--text-color);
+        }
+
+        &:hover::placeholder {
+            color: var(--title-color);
+        }
+
+        &:hover:focus::placeholder {
+            color: var(--sec-color);
+        }
     }
 
     &__field {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        //padding: 1rem 1rem 1rem 0;
-        background: none;
-        color: var(--text-color);
-        border: none;
-        outline: none;
-        z-index: 1;
+        height: 50px;
+        border-bottom: none;
     }
 
-    &__field:focus + &__label {
-        top: -0.75rem;
-        left: 0;
-        font-size: var(--smaller-font-size);
-        z-index: 10;
+    &__message {
+        height: 110px;
+        resize: none;
     }
 
-    &__field:not(:placeholder-shown):not(:focus) + &__label {
-        top: -0.75rem;
-        font-size: var(--smaller-font-size);
-        z-index: 10;
-    }
-
-    &__label {
-        position: absolute;
-        top: 0.75rem;
-        width: 100%;
-        font-size: var(--small-font-size);
+    &__submit {
+        border-top: none;
+        font-weight: var(--font-semi-bold);
+        color: var(--first-color);
+        cursor: pointer;
         color: var(--sec-color);
-        transition: 0.3s;
-        -webkit-transition: 0.3s;
-        -moz-transition: 0.3s;
-        -ms-transition: 0.3s;
-        -o-transition: 0.3s;
-    }
-    &__area {
-        height: 7rem;
+        background-color: var(--first-color);
 
-        textarea {
-            resize: none;
+        &:hover {
+            background-color: var(--sec-color);
+            color: var(--text-color);
         }
     }
 }
