@@ -114,6 +114,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+7/30/23
+
+- FEAT(media): Preliminary responsive design implementation. Media queries added to handle varying screen sizes. Further refinements to be made for optimal design across devices.
+
 7/29/23
 
 - FEAT(headernav): Implemented Scroll-Up Button and Active Scroll Section Indicator
