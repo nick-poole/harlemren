@@ -19,6 +19,7 @@
     --first-color-second: hsl(177, 64%, 22%);
     --first-color-alt: hsl(177, 64%, 15%);
     --sec-color: hsl(27, 89%, 58%);
+    --acc-color: hsl(240, 2%, 59%);
     --title-color: hsl(177, 64%, 18%);
     --text-color: hsl(177, 24%, 35%);
     --text-color-light: hsl(177, 8%, 60%);
@@ -659,8 +660,22 @@ input {
 .menu {
     margin-top: 2rem;
     &__list {
-        margin: 2rem 0;
         max-width: 400px;
+        margin: 2rem 0;
+        padding: 1rem;
+
+        background-color: var(--white-color);
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+            rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+        border-left: 10px solid var(--acc-color);
+        border-bottom: 10px solid var(--first-color);
+
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
     &__list > li {
         display: grid;
@@ -1041,6 +1056,12 @@ input {
     //     &__section-description {
     //     }
     // }
+
+    .menu {
+        &-item {
+            font-size: var(--small-font-size);
+        }
+    }
 }
 
 /* For medium devices */
