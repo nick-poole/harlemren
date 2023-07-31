@@ -45,7 +45,7 @@ function scrollHeader() {
 window.addEventListener("scroll", scrollHeader);
 
 /*=============== SWIPER SERVICES ===============*/
-let swiper = new Swiper(".service__container", {
+let swiper = new Swiper(".swiper-container", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,

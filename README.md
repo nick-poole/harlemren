@@ -114,6 +114,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+7/31/23
+
+- FIX(main): resolves SwiperJS issue caused by service container div repositioning
+
 7/30/23
 
 - FEAT(media): Enhance responsive design of about and mto sections on 480px screens and below

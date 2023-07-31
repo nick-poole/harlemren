@@ -569,9 +569,9 @@ input {
 /*=============== SERVICES ===============*/
 .service {
     padding-top: 2.5rem;
-    &__container {
-        overflow: hidden;
-    }
+    // &__container {
+    //     overflow: hidden;
+    // }
 
     // &__section-description {
     //     margin: 1rem;
@@ -608,7 +608,7 @@ input {
     &__img {
         width: 100vw;
         height: 600px;
-        //object-fit: cover;
+        object-fit: cover;
         transition: var(--img-transition);
         -webkit-transition: var(--img-transition);
         -moz-transition: var(--img-transition);
@@ -666,32 +666,6 @@ input {
         margin-bottom: var(--mb-2-5);
     }
 }
-
-// #contact-form {
-//     display: flex;
-//     flex-direction: column;
-//     .form-group {
-//         margin-bottom: 15px;
-//     }
-//     label {
-//         display: block;
-//         margin-bottom: 5px;
-//     }
-//     input {
-//         width: 100%;
-//         padding: 10px;
-//         border: 1px solid #ccc;
-//         border-radius: 4px;
-//     }
-//     input[type="submit"] {
-//         background-color: #333;
-//         color: white;
-//         cursor: pointer;
-//     }
-//     input[type="submit"]:hover {
-//         background-color: #444;
-//     }
-// }
 
 /*=============== SUBSCRIBE ===============*/
 .subscribe {
@@ -1100,14 +1074,14 @@ input {
         }
     }
 
-    .service {
-        &__container {
-            width: 610px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 2rem;
-        }
-    }
+    // .service {
+    //     &__container {
+    //         width: 610px;
+    //         margin-left: auto;
+    //         margin-right: auto;
+    //         padding-top: 2rem;
+    //     }
+    // }
 }
 
 /* For large devices */
@@ -1208,21 +1182,21 @@ input {
         }
     }
 
-    .service {
-        &__card {
-            width: 350px;
-        }
-        &__container {
-            width: 1000px;
-        }
-        &__data {
-            left: 1.5rem;
-            bottom: 0;
-        }
-        &__title {
-            font-size: var(--h2-font-size);
-        }
-    }
+    // .service {
+    //     &__card {
+    //         width: 350px;
+    //     }
+    //     &__container {
+    //         width: 1000px;
+    //     }
+    //     &__data {
+    //         left: 1.5rem;
+    //         bottom: 0;
+    //     }
+    //     &__title {
+    //         font-size: var(--h2-font-size);
+    //     }
+    // }
 
     .video {
         &__container {
