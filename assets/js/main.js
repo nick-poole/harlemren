@@ -32,7 +32,7 @@ function linkAction() {
 //For each nav link click ^
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*========== CHANGE BACKGROUND HEADER ==========*/
+/*======= CHANGE BACKGROUND HEADER =======*/
 function scrollHeader() {
     const header = document.getElementById("header");
     // If the scroll is greater than 100 viewport height, v
@@ -44,13 +44,13 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*=============== SWIPER SERVICES ===============*/
+/*============ SWIPER SERVICES ============*/
 let swiper = new Swiper(".swiper-container", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    loop: false,
+    loop: true,
     spaceBetween: 10,
     coverflowEffect: {
         rotate: 0,
@@ -58,7 +58,7 @@ let swiper = new Swiper(".swiper-container", {
     },
 });
 
-/*=============== SHOW SCROLL UP ===============*/
+/*============ SHOW SCROLL UP ============*/
 function scrollUp() {
     const scrollUp = document.getElementById("scroll-up");
     // When the scroll is higher than 200 viewport height

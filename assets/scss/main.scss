@@ -573,9 +573,9 @@ input {
     //     overflow: hidden;
     // }
 
-    // &__section-description {
-    //     margin: 1rem;
-    // }
+    &__section-description {
+        margin-top: 1rem;
+    }
 
     &__card {
         position: relative;
@@ -639,6 +639,16 @@ input {
         //     object-position: center bottom;
         // }
     }
+
+    // %__menu{
+    //     margin
+    // }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin: 5rem 0;
 }
 
 .swiper-container-3d .swiper-slide-shadow-left,
@@ -646,16 +656,37 @@ input {
     background-image: none;
 }
 
-.service__menu {
-    ul {
+.menu {
+    margin-top: 2rem;
+    &__list {
+        margin: 2rem 0;
+        max-width: 400px;
+    }
+    &__list > li {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1rem;
-        list-style: none;
-        padding: 0 0 0 15px;
-        margin: 0 auto;
+        grid-template-columns: 1fr auto;
+        gap: 10px;
+    }
+
+    &-item {
+        text-align: left;
+    }
+
+    &-price {
+        text-align: right;
     }
 }
+
+// .service__menu {
+//     ul {
+//         display: grid;
+//         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+//         gap: 1rem;
+//         list-style: none;
+//         padding: 0 0 0 15px;
+//         margin: 0 auto;
+//     }
+// }
 
 /*=============== VIP ===============*/
 .video {
@@ -1005,6 +1036,11 @@ input {
             top: -5px;
         }
     }
+
+    // .service {
+    //     &__section-description {
+    //     }
+    // }
 }
 
 /* For medium devices */
@@ -1027,6 +1063,18 @@ input {
     //         margin: 0 auto;
     //     }
     // }
+
+    .menu {
+        &__container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        &__list {
+            margin: 2rem auto;
+            //grid-template-columns: repeat(2, 1fr);
+            //gap: 2rem;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1197,6 +1245,12 @@ input {
     //         font-size: var(--h2-font-size);
     //     }
     // }
+
+    .menu {
+        margin: 2rem auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 
     .video {
         &__container {

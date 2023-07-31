@@ -116,6 +116,8 @@ Formspree handles submissions from the Contact Form.
 
 7/31/23
 
+- FEAT(media): Update Menu price list
+
 - FIX(main): resolves SwiperJS issue caused by service container div repositioning
 
 7/30/23
