@@ -116,6 +116,8 @@ Formspree handles submissions from the Contact Form.
 
 7/30/23
 
+- FEAT(media): Enhance responsive design of about and mto sections on 480px screens and below
+
 - FEAT(media): Preliminary responsive design implementation. Media queries added to handle varying screen sizes. Further refinements to be made for optimal design across devices.
 
 7/29/23

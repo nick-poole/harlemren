@@ -92,7 +92,7 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    min-width: 320px;
+    min-width: 310px;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -158,7 +158,7 @@ input {
     display: block;
     font-size: var(--h2-font-size);
     font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1);
     text-align: center;
     color: var(--sec-color);
 }
@@ -186,8 +186,8 @@ input {
 }
 
 .par {
-    font-size: var(--font-medium);
-    margin-bottom: var(--mb-1-5);
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-0-75);
     padding: 0 15px;
     text-align: justify;
     line-height: 1.6;
@@ -198,8 +198,8 @@ input {
 }
 
 .blockquote {
-    width: 70%;
-    margin: 10px auto;
+    width: 80%;
+    margin: 0 auto;
     padding: 0 30px 0 75px;
     border-left: 8px solid;
     background: #ededed;
@@ -219,6 +219,8 @@ input {
 
     span {
         display: block;
+        text-align: end;
+
         font-style: normal;
         font-weight: bold;
         margin-top: 1em;
@@ -233,12 +235,14 @@ input {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--first-color);
-    // background-color: transparent;
+    //background-color: transparent;
 }
 
 /*=============== NAV ===============*/
 .nav {
     height: var(--header-height);
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -310,12 +314,13 @@ input {
 
 /* Change background header */
 .scroll-header {
-    background-color: var(--body-color);
+    background-color: var(--first-color);
     box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 0.1);
 
     & .nav__logo,
     & .nav__toggle {
-        color: var(--title-color);
+        color: var(--sec-color);
+        font-weight: var(--font-semi-bold);
     }
 }
 
@@ -472,9 +477,9 @@ input {
     &__container {
         row-gap: 2.5rem;
     }
-    &__description {
-        margin-bottom: var(--mb-2);
-    }
+    // &__description {
+    //     margin-bottom: var(--mb-2);
+    // }
 
     &__img {
         display: flex;
@@ -514,6 +519,10 @@ input {
 
 /*=============== MEET THE OWNER ===============*/
 .mto {
+    &__img {
+        width: 100vw;
+        height: auto;
+    }
     &__name {
         margin-top: 1.5rem;
         margin-bottom: 0.5rem;
@@ -526,28 +535,37 @@ input {
     }
 
     &__container {
-        row-gap: 2.5rem;
+        row-gap: 1rem;
         justify-content: space-between;
-        justify-items: center;
     }
     &__content {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 5rem;
         justify-items: center;
         padding: 0 2rem;
-        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     &__data {
+        display: grid;
+        place-items: center;
+        gap: 0;
+
         &-rmx {
-            display: block;
+            display: grid;
             font-size: 1.5rem;
-            margin: 1rem auto;
+            margin: 0.5rem auto;
+            justify-self: center;
         }
     }
     &__number {
         font-size: var(--h1-font-size);
         font-weight: var(--font-semi-bold);
         margin-bottom: var(--mb-0-5);
+    }
+
+    &__description {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -933,16 +951,6 @@ input {
     //     }
     // }
 
-    .section {
-        &__title {
-            font-size: var(--h1-font-size);
-        }
-
-        &__subtitle {
-            font-size: var(--h3-font-size);
-        }
-    }
-
     .home {
         &__info {
             width: 240px;
@@ -959,11 +967,67 @@ input {
         &__content {
             padding: 0;
         }
+        &__name {
+            font-size: var(--h3-font-size);
+        }
     }
 
-    .mto__img,
     .video__container {
         padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        &__title {
+            font-size: var(--h1-font-size);
+        }
+
+        &__subtitle {
+            font-size: var(--h3-font-size);
+        }
+    }
+
+    .par {
+        font-size: var(--small-font-size);
+    }
+
+    // .about {
+    // }
+
+    .mto {
+        &__container {
+            row-gap: 0.5rem;
+        }
+
+        &__content {
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        &__license {
+            font-size: var(--normal-font-size);
+        }
+        &__number {
+            font-size: var(--h3-font-size);
+        }
+        &__data {
+            &-description {
+                font-size: var(--small-font-size);
+            }
+            &-rmx {
+                font-size: var(--normal-font-size);
+            }
+        }
+    }
+    .blockquote {
+        font: var(--normal-font-size);
+        margin: 0px auto;
+        padding: 0 20px 0 50px;
+
+        &::before {
+            font-size: 3em;
+            top: -5px;
+        }
     }
 }
 
@@ -1052,7 +1116,6 @@ input {
     }
 
     .nav {
-        width: 100vw;
         height: calc(var(--header-height) + 1.5rem);
 
         &__link {
@@ -1130,6 +1193,13 @@ input {
     }
 
     .mto {
+        &__img {
+            width: 1024px;
+
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
         &__content {
             margin: var(--mb-1) 0;
             column-gap: 5.5rem;
