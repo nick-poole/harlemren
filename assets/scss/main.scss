@@ -180,9 +180,6 @@ input {
 
 .banner {
     width: 100%;
-    // &-img{
-
-    // }
 }
 
 .par {
@@ -571,10 +568,15 @@ input {
 
 /*=============== SERVICES ===============*/
 .service {
-    padding-top: 0;
+    padding-top: 2.5rem;
     &__container {
-        margin: 0 0 50px 0;
+        overflow: hidden;
     }
+
+    // &__section-description {
+    //     margin: 1rem;
+    // }
+
     &__card {
         position: relative;
         width: 400px;
