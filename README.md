@@ -116,7 +116,9 @@ Formspree handles submissions from the Contact Form.
 
 8/1/23
 
-- FIX(main): resolved 480px media query scope issue 
+- FEAT(main): Update nile style logo and revise text as per client's request
+
+- FIX(main): resolved 480px media query scope issue
 
 - FEAT(headernav): Update global button styling
 
