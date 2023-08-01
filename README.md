@@ -114,6 +114,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/1/23
+
+- FEAT(headernav): Update global button styling
+
 7/31/23
 
 - FEAT(services): Enhance Menu styling w/ borders and box shadow effects
