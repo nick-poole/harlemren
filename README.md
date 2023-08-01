@@ -116,6 +116,8 @@ Formspree handles submissions from the Contact Form.
 
 8/1/23
 
+- FIX(main): resolved 480px media query scope issue 
+
 - FEAT(headernav): Update global button styling
 
 7/31/23

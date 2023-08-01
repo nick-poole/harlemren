@@ -567,8 +567,8 @@ input {
         justify-content: space-between;
     }
     &__content {
-        grid-template-columns: repeat(4, 1fr);
-        column-gap: 5rem;
+        grid-template-columns: 1fr;
+        gap: 1rem;
         justify-items: center;
         padding: 0 2rem;
         margin-bottom: 1rem;
@@ -1060,51 +1060,47 @@ input {
             padding: 0.5rem;
             font-size: var(--small-font-size);
         }
+    }
 
-        .mto {
-            &__container {
-                row-gap: 0.5rem;
-            }
-
-            &__content {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            &__license {
-                font-size: var(--normal-font-size);
-            }
-            &__number {
-                font-size: var(--h3-font-size);
-            }
-            &__data {
-                &-description {
-                    font-size: var(--small-font-size);
-                }
-                &-rmx {
-                    font-size: var(--normal-font-size);
-                }
-            }
-        }
-        .blockquote {
-            font: var(--normal-font-size);
-            margin: 0px auto;
-            padding: 0 20px 0 50px;
-
-            &::before {
-                font-size: 3em;
-                top: -5px;
-            }
+    .mto {
+        &__container {
+            row-gap: 0.5rem;
         }
 
-        // .service {
-        //     &__section-description {
-        //     }
-        // }
-
-        .menu {
-            &-item {
+        &__license {
+            font-size: var(--normal-font-size);
+        }
+        &__number {
+            font-size: var(--normal-font-size);
+        }
+        &__data {
+            &-description {
                 font-size: var(--small-font-size);
             }
+            &-rmx {
+                font-size: var(--normal-font-size);
+            }
+        }
+    }
+    .blockquote {
+        font: var(--normal-font-size);
+        margin: 0px auto;
+        padding: 0 20px 0 50px;
+
+        &::before {
+            font-size: 3em;
+            top: -5px;
+        }
+    }
+
+    // .service {
+    //     &__section-description {
+    //     }
+    // }
+
+    .menu {
+        &-item {
+            font-size: var(--small-font-size);
         }
     }
 }
@@ -1129,6 +1125,13 @@ input {
     //         margin: 0 auto;
     //     }
     // }
+
+    .mto {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 5rem;
+        }
+    }
 
     .menu {
         &__container {
