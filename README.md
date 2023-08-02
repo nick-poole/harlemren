@@ -123,7 +123,7 @@ Formspree handles submissions from the Contact Form.
 
 8/1/23
 
-- FIX(home): Returned the `Book Now` button to home section
+- FIX(home): Returned the Book Now button to home section
 
 - FEAT(media): Restyle base home section & integrate `Overpass` font.
 
