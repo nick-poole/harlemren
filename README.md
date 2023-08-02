@@ -123,6 +123,11 @@ Formspree handles submissions from the Contact Form.
 
 8/1/23
 
+- FIX(headernav): Adjust scroll position for section navigation and restyle section titles
+  - Adjusted JavaScript to ensure correct scroll position when navigating to sections via header links
+  - Restored 'scroll to top' functionality on scroll-up button
+  - Introduced a green background for improved visibility and aesthetics
+
 - FIX(home): Returned the Book Now button to home section
 
 - FEAT(media): Restyle base home section & integrate `Overpass` font.

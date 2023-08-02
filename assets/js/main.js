@@ -59,10 +59,12 @@ let swiper = new Swiper(".swiper-container", {
 });
 
 /*============ SHOW SCROLL UP ============*/
+const headerHeight = document.getElementById("header").offsetHeight;
+
 function scrollUp() {
     const scrollUp = document.getElementById("scroll-up");
     // When the scroll is higher than 200 viewport height
-    if (this.scrollY >= 200)
+    if (this.scrollY >= 200 + headerHeight)
         //add the show-scroll class to the a tag
         scrollUp.classList.add("show-scroll");
     // else remove
@@ -70,8 +72,30 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
-/*========= SCROLL SECTIONS ACTIVE LINK =========*/
+/*========= HEADER HEIGHT COMPENSATION =========*/
+//All links
+const links = document.querySelectorAll('a[href^="#"]');
 
+links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        //href value without the hash symbol
+        const id = this.getAttribute("href").substring(1);
+
+        //section corresponding to the link
+        const section = document.getElementById(id);
+
+        // Scroll to section (minus the height of the header)
+        window.scroll({
+            //(--header-height: 4.5rem)
+            top: section.offsetTop - headerHeight,
+            behavior: "smooth",
+        });
+    });
+});
+
+/*========= SCROLL SECTIONS ACTIVE LINK =========*/
 function scrollActive() {
     const sections = document.querySelectorAll("section[id], article[id]");
 
@@ -79,8 +103,8 @@ function scrollActive() {
 
     sections.forEach((current) => {
         const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute("id");
+        const sectionTop = current.offsetTop - headerHeight;
+        let sectionId = current.getAttribute("id");
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector(`.nav__menu a[href*=${sectionId}]`).classList.add("active-link");
@@ -94,5 +118,3 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 /*==========  SCROLL REVEAL ANIMATION ========== */
-
-/*============== DARK LIGHT THEME ==============*/
