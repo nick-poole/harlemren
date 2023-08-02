@@ -123,7 +123,7 @@ Formspree handles submissions from the Contact Form.
 
 8/2/23
 
-- FIX(home): Fixes home container layout, added margin-top and adjusted height"
+- FIX(home): Fixes home container layout by adding margin-top"
 
 - FEAT(headernav): Update navigation styling for larger screens (1024px)
 
