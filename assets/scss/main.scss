@@ -378,7 +378,7 @@ input {
     &__container {
         position: relative;
         height: calc(100vh - var(--header-height));
-
+        margin-top: var(--header-height);
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
 
