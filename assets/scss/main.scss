@@ -238,8 +238,10 @@ input {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--first-color);
-    background-color: transparent;
+    background-color: var(--body-color);
+
+    // background-color: var(--first-color);
+    // background-color: transparent;
 }
 
 /*=============== NAV ===============*/
@@ -253,19 +255,21 @@ input {
 
     &__logo,
     &__toggle {
-        color: var(--white-color);
+        font-size: var(--h2-font-size);
     }
 
     &__logo {
-        font-weight: var(--font-semi-bold);
-        &-img {
-            height: 75px;
-            width: 75px;
-        }
+        color: var(--first-color);
+        font-family: var(--title-font);
+
+        // &-img {
+        //     height: 75px;
+        //     width: 75px;
+        // }
     }
 
     &__toggle {
-        font-size: 1.2rem;
+        color: var(--sec-color);
         cursor: pointer;
     }
 
@@ -282,6 +286,10 @@ input {
             box-shadow: -1px 0 4px hsla(190, 64%, 15%, 0.15);
             padding: 3rem;
             transition: 0.4s;
+            -webkit-transition: 0.4s;
+            -moz-transition: 0.4s;
+            -ms-transition: 0.4s;
+            -o-transition: 0.4s;
         }
     }
 
@@ -291,14 +299,14 @@ input {
         row-gap: 2.5rem;
     }
     &__link {
+        font-family: var(--title-font);
         font-weight: var(--font-semi-bold);
         text-transform: uppercase;
+
         color: var(--text-color);
 
         &:hover {
-            // color: var(--text-color);
             color: var(--sec-color);
-            //text-decoration: overline;
         }
     }
     &__close {
@@ -321,11 +329,16 @@ input {
     background-color: var(--first-color);
     box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 0.1);
 
-    & .nav__logo,
-    & .nav__toggle {
-        color: var(--sec-color);
-        font-weight: var(--font-semi-bold);
+    & .nav__logo {
+        color: var(--white-color);
+        font-family: var(--title-font);
     }
+
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
 }
 
 /* Active link */
@@ -380,6 +393,7 @@ input {
     }
 
     &__data {
+        margin-top: 2.5rem;
         &-subtitle {
             display: block;
             font-weight: var(--font-semi-bold);
@@ -387,7 +401,7 @@ input {
         }
         &-title {
             width: fit-content;
-            font-size: var(--biggest-font-size);
+            font-size: var(--h1-font-size);
             font-weight: var(--font-medium);
             margin-bottom: var(--mb-2-5);
             padding-left: 0.3rem;
@@ -1234,27 +1248,27 @@ input {
     .nav {
         height: calc(var(--header-height) + 1.5rem);
 
-        &__link {
-            color: var(--white-color);
-            text-transform: initial;
-            font-size: var(--small-font-size);
-
-            &:hover {
-                color: var(--white-color);
-            }
-        }
-        &__dark {
-            position: initial;
-        }
-
         &__menu {
+            width: 80%;
             display: flex;
             column-gap: 1rem;
         }
 
         &__list {
+            width: 100%;
             flex-direction: row;
-            column-gap: 4rem;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            column-gap: 1rem;
+        }
+
+        &__link {
+            text-transform: initial;
+            font-size: var(--normal-font-size);
+
+            &:hover {
+                color: var(--acc-color);
+            }
         }
 
         &__toggle,
@@ -1263,27 +1277,19 @@ input {
         }
     }
 
-    .change {
-        &-theme-name {
-            display: none;
-        }
-        &-theme {
-            color: var(--white-color);
-        }
-    }
-
     .active-link::before {
         background-color: var(--white-color);
     }
 
     .scroll-header .nav__link {
-        color: var(--text-color);
+        color: var(--body-color);
     }
     .scroll-header .active-link {
-        color: var(--title-color);
+        color: var(--sec-color);
     }
     .scroll-header .active-link::before {
-        background-color: var(--title-color);
+        background-color: var(--sec-color);
+        bottom: -0.5rem;
     }
 
     .scroll-header .change-theme {
@@ -1365,14 +1371,14 @@ input {
 }
 
 /* For tall screens on mobile & desktop*/
-// @media screen and (min-height: 721px) {
-//     body {
-//         margin: 0;
-//     }
-//     .home {
-//         &__container,
-//         &__img {
-//             height: 640px;
-//         }
-//     }
-// }
+@media screen and (min-height: 721px) {
+    body {
+        margin: 0;
+    }
+    // .home {
+    //     &__container,
+    //     &__img {
+    //         height: 640px;
+    //     }
+    // }
+}

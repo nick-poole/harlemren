@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/2/23
+
+- FEAT(headernav): Update navigation styling for larger screens (1024px)
+
 8/1/23
 
 - FIX(headernav): Adjust scroll position for section navigation and restyle section titles
