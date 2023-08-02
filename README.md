@@ -60,10 +60,17 @@ The toggling functionality for the navigation menu is implemented in JavaScript.
 
 ### Color Palette
 
-- --hr-blue: #0103d0
-- --hr-red: #fd050b
-- --hr-yellow: #fff903
-- --hr-gray: #8c8c8c
+- --first-color: hsl(177, 84%, 29%);
+- --first-color-light: hsl(177, 64%, 43%);
+- --first-color-second: hsl(177, 64%, 22%);
+- --first-color-alt: hsl(177, 64%, 15%);
+- --sec-color: hsl(27, 89%, 58%);
+- --acc-color: hsl(240, 2%, 59%);
+- --title-color: hsl(177, 64%, 18%);
+- --text-color: hsl(177, 24%, 35%);
+- --text-color-light: hsl(177, 8%, 60%);
+- --input-color: hsl(177, 64%, 17%);
+- --body-color: hsl(177, 100%, 99%);
 
 ## Sass Setup
 
@@ -115,6 +122,8 @@ Formspree handles submissions from the Contact Form.
 ## Commit Log
 
 8/1/23
+
+- FEAT(media): Restyle base home section & integrate `Overpass` font.
 
 - FEAT(main): Update nile style logo and revise text as per client's request
 
