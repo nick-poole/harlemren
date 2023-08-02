@@ -185,10 +185,6 @@ input {
     margin-left: -0.3rem;
 }
 
-.banner {
-    width: 100%;
-}
-
 .par {
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-0-75);
@@ -554,6 +550,9 @@ input {
     &__data {
         text-align: center;
     }
+    &__button {
+        margin: 2rem auto;
+    }
     &__container {
         row-gap: 2.5rem;
     }
@@ -565,6 +564,13 @@ input {
 
         &-overlay {
             overflow: var(--img-hidden);
+        }
+
+        &-zero {
+            width: 100%;
+            max-width: 990px;
+            height: auto;
+            display: block;
         }
 
         &-one {
@@ -1188,7 +1194,7 @@ input {
     }
 
     .section {
-        padding: 7rem 0 2rem;
+        padding: 3rem 0 2rem;
     }
 
     .home {
@@ -1212,19 +1218,19 @@ input {
     }
 
     .about {
-        &__container {
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-        }
-        &__data,
-        &__title {
-            text-align: initial;
-        }
         &__title {
             margin-bottom: var(--mb-1-5);
         }
         &__description {
             margin-bottom: var(--mb-2);
+        }
+        &__img {
+            &-zero {
+                margin: 0 auto;
+            }
+        }
+        &__button {
+            text-align: center;
         }
     }
 

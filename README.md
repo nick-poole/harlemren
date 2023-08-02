@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/2/23
 
+- FEAT(about): Adjust layout for the about section to enhance its appearance on screens 768px and above
+
 - FIX(home): Fixes home container layout by adding margin-top"
 
 - FEAT(headernav): Update navigation styling for larger screens (1024px)
