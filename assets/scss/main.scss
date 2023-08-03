@@ -577,7 +577,7 @@ input {
             width: 160px;
         }
         &-two {
-            width: 200px;
+            width: 300px;
         }
         &-one,
         &-two {
@@ -599,7 +599,7 @@ input {
     }
 }
 
-/*=============== MEET THE OWNER ===============*/
+/*============ MEET THE OWNER ============*/
 .mto {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
@@ -664,9 +664,17 @@ input {
 /*=============== SERVICES ===============*/
 .service {
     padding-top: 2.5rem;
-    // &__container {
-    //     overflow: hidden;
-    // }
+    &__container {
+        overflow: hidden;
+    }
+
+    &__header-img {
+        display: block;
+        width: 100vw;
+        max-width: 994px;
+        height: auto;
+        margin: 0 auto;
+    }
 
     &__section-description {
         margin-top: 1rem;
@@ -683,13 +691,12 @@ input {
         position: absolute;
         bottom: 0rem;
         left: 0rem;
-        backdrop-filter: blur(10px);
-        background-color: rgba(12, 136, 130, 0.9);
+        //backdrop-filter: blur(1px);
+        background-color: var(--sec-color);
         padding: 0.5rem;
-        border-left: 10px solid var(--sec-color);
+        border-left: 10px solid var(--acc-color);
     }
-    &__title,
-    &__description {
+    &__title {
         color: var(--sec-color);
     }
     &__title {
@@ -698,6 +705,7 @@ input {
     }
     &__description {
         display: block;
+        color: var(--body-color);
         font-size: var(--normal-font-size);
     }
     &__img {
@@ -717,33 +725,13 @@ input {
             -ms-transform: var(--img-scale);
             -o-transform: var(--img-scale);
         }
-
-        // &.si-1 {
-        //     object-position: left bottom;
-        // }
-        // &.si-2 {
-        //     object-position: center bottom;
-        // }
-        // &.si-3 {
-        //     object-position: center bottom;
-        // }
-        // &.si-4 {
-        //     object-position: center bottom;
-        // }
-        // &.si-5 {
-        //     object-position: center bottom;
-        // }
     }
-
-    // %__menu{
-    //     margin
-    // }
 }
 
 .swiper-container {
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    margin: 5rem 0;
+    margin: 0;
 }
 
 .swiper-container-3d .swiper-slide-shadow-left,
@@ -751,8 +739,22 @@ input {
     background-image: none;
 }
 
+/* Change color of pagination bullets */
+.swiper-pagination-bullet {
+    background: var(--sec-color) !important;
+}
+
+/* Change color of navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--sec-color) !important;
+}
+
 .menu {
     margin-top: 2rem;
+    &__title {
+        margin-top: 5rem;
+    }
     &__list {
         max-width: 400px;
         margin: 2rem 0;
@@ -1061,13 +1063,6 @@ input {
 /*============ MEDIA QUERIES ============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
-    // .place{
-    //     &__container{
-    //         grid-template-columns: max-content;
-    //         justify-content: center;
-    //     }
-    // }
-
     .home {
         &__info {
             width: 240px;
@@ -1259,14 +1254,14 @@ input {
         }
     }
 
-    // .service {
-    //     &__container {
-    //         width: 610px;
-    //         margin-left: auto;
-    //         margin-right: auto;
-    //         padding-top: 2rem;
-    //     }
-    // }
+    .service {
+        &__container {
+            //width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2rem;
+        }
+    }
 }
 
 /* For large devices */

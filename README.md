@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/3/23
 
+- FEAT(services): Adds pagination and navigation to Swiper and updated their color schemes
+
 - FEAT(mto): Adjust layout for mto section on large screens (768px)
 
 - FEAT(mto): Adjust layout for mto section on medium screens (568px)
