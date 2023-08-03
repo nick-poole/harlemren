@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/3/23
 
+- FEAT(mto): Adjust layout for mto section on large screens (768px)
+
 - FEAT(mto): Adjust layout for mto section on medium screens (568px)
 
 8/2/23

@@ -603,26 +603,30 @@ input {
 .mto {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+
+    padding-top: 0;
+
     &__img {
+        display: block;
         width: 100vw;
         max-width: 994px;
         height: auto;
+        margin: 0 auto;
     }
     &__plate {
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        row-gap: 1rem;
     }
     &__name {
-        margin-top: 0.2rem;
-        margin-bottom: 0.5rem;
+        //margin-top: 0.2rem;
+        //margin-bottom: 0.5rem;
         font-size: var(--h2-font-size);
     }
     &__license {
         font-size: var(--h3-font-size);
         color: var(--sec-color);
-        margin-bottom: var(--mb-0-25);
+        //margin-bottom: var(--mb-0-25);
     }
     &__content {
         grid-template-columns: 1fr;
@@ -633,9 +637,10 @@ input {
         margin: 2rem 0 1rem 0;
     }
     &__data {
-        display: grid;
-        place-items: center;
-        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         &-rmx {
             display: grid;
@@ -1172,9 +1177,6 @@ input {
     }
 
     .mto {
-        &__content {
-            grid-template-columns: repeat(4, 1fr);
-        }
         &__number {
             font-size: var(--normal-font-size);
         }
@@ -1241,6 +1243,20 @@ input {
 
     .blockquote {
         margin: 2rem auto 0 auto;
+    }
+
+    .mto {
+        padding: 0;
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &__plate {
+            align-items: center;
+        }
+
+        &__number {
+            font-size: var(--h2-font-size);
+        }
     }
 
     // .service {
@@ -1326,19 +1342,6 @@ input {
             &-img {
                 width: 240px;
             }
-        }
-    }
-
-    .mto {
-        &__img {
-            width: 1024px;
-
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-        &__content {
-            column-gap: 5.5rem;
         }
     }
 
