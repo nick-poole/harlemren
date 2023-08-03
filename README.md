@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/3/23
+
+- FEAT(mto): Adjust layout for mto section on medium screens (568px)
+
 8/2/23
 
 - FEAT(about): Adjust layout for the about section to enhance its appearance on screens 768px and above
