@@ -281,7 +281,7 @@
           <div class="menu container grid">
 
             <div class="menu__group">
-              <h3 class="section__subtitle">Price List</h3>
+              <h3 class="section__subtitle">Base</h3>
               <ul class="menu__list grid">
                 <li>
                   <span class="menu-item">Adults</span>
@@ -307,17 +307,17 @@
                   <span class="menu-item">Shape Up</span>
                   <span class="menu-price">$25</span>
                 </li>
-
-                <li>
-                  <span class="menu-item">Designs</span>
-                  <span class="menu-price">$10+</span>
-                </li>
               </ul>
             </div>
 
             <div class="menu__group">
               <h3 class="section__subtitle">Enhancements</h3>
               <ul class="menu__list grid">
+                <li>
+                  <span class="menu-item">Designs</span>
+                  <span class="menu-price">$10+</span>
+                </li>
+
                 <li>
                   <span class="menu-item">Hairline, Beard</span>
                   <span class="menu-price">$10 ea.</span>
@@ -493,11 +493,44 @@
           <h2 class="section__title">Appointments</h2>
           <h3 class="section__subtitle">Seamless Booking for Impeccable Grooming</h3>
 
-          <div class="acuity-embed" style="width:100%; position:relative; min-height: 800px;">
-            <iframe src="https://example.acuityscheduling.com/schedule.php" width="100%" height="800"
-              frameborder="0"></iframe>
-            <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+          <div class="appointment__description">
+            <p class="par f-par">
+              Embark on your grooming journey with The New Harlem Renaissance. The online booking
+              system makes it simple and convenient for you to secure your appointment. With just a few clicks, you can
+              choose your preferred services, select a time slot, and have your appointment confirmed.
+            </p>
+
+            <p class="par">To ensure a seamless experience, please take note of the following:</p>
+
+            <ul class="par-list">
+              <li>Arrive a few minutes early to allow for a prompt start.</li>
+
+              <li>If you're unable to make your appointment, please cancel at least 24 hours in advance.</li>
+
+              <li>
+                <span>Missed appointments or late cancellations may be subject to a fee.</span>
+              </li>
+
+              <li>Your punctuality, cooperation, and understanding help ensure the best service to all clients.</li>
+
+              <li>Appointments are currently held at <a href="#map">The Nile Style Barbershop</a> in Northeast
+                Baltimore.
+                The Nile Style is located at the intersection of Northern Pkwy &amp; Harford Road.</li>
+            </ul>
+
+            <p class="par">
+              Please note that any additional services requested during your appointment will incur additional
+              charges.
+              You'll be informed of these prior to service delivery, ensuring there are no surprises when it comes
+              time for payment.
+              Timely communication about any additional services you'd like to add helps in providing a smooth and
+              enjoyable experience. If you have any questions, do not hesitate to contact <a href="#cta">Kennard</a>.
+            </p>
           </div>
+
+          <iframe src="https://app.acuityscheduling.com/schedule.php?owner=29882172" title="Schedule Appointment"
+            width="100%" height="800" frameborder="0"></iframe>
+          <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
         </div>
       </section>
 
@@ -606,6 +639,7 @@
               </span>
             </div>
 
+
             <div class="contact__data">
               <h3 class="contact__subtitle">Send an Email</h3>
               <span class="contact__info">
@@ -617,7 +651,6 @@
           </div>
 
           <form class="form" id="form" action="https://formspree.io/f/mnqknkbj" method="POST">
-
             <input class="form__field" id="name" type="text" placeholder="NAME">
             <input class="form__field" id="email" type="text" placeholder="E-MAIL">
             <input class="form__field" id="subject" type="text" placeholder="SUBJECT">
@@ -627,8 +660,14 @@
             <input class="form__field form__submit" id="submit" type="submit" value="SEND">
           </form>
         </div>
-
       </section>
+
+      <!--===== GOOGLE MAPS EMBED =====-->
+      <div class="iframe-embed" id="map">
+        <iframe class="google-map" title="Google Map Location of Nile Style Barbershop"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.6968656833706!2d-76.5549466876672!3d39.36310077151006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80f559a143e73%3A0xc9c35ae3a8259af5!2sNile%20Style%20Barber%20Shop!5e0!3m2!1sen!2sus!4v1691120387034!5m2!1sen!2sus"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </main>
 
     <!--==================== FOOTER ====================-->
