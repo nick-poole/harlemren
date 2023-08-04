@@ -15,6 +15,9 @@
     --first-color-alt: hsl(177, 64%, 15%);
     --sec-color: hsl(27, 89%, 58%);
     --acc-color: hsl(240, 2%, 59%);
+    --roy-color: #f0d397;
+    --roy-text-color: #e8e6d7;
+    --roy-black-color: #1f1f1f;
     --title-color: hsl(177, 64%, 18%);
     --text-color: hsl(177, 24%, 35%);
     --text-color-light: hsl(177, 8%, 60%);
@@ -688,7 +691,7 @@ input {
     &__card {
         position: relative;
         width: 400px;
-        height: 600px;
+        height: 500px;
         overflow: var(--img-hidden);
     }
 
@@ -699,10 +702,10 @@ input {
         //backdrop-filter: blur(1px);
         background-color: var(--sec-color);
         padding: 0.5rem;
-        border-left: 10px solid var(--acc-color);
+        border-left: 15px solid var(--first-color);
     }
     &__title {
-        color: var(--sec-color);
+        color: var(--first-color);
     }
     &__title {
         font-size: var(--h3-font-size);
@@ -714,8 +717,8 @@ input {
         font-size: var(--normal-font-size);
     }
     &__img {
-        width: 100vw;
-        height: 600px;
+        width: 100%;
+        height: 450px;
         object-fit: cover;
         transition: var(--img-transition);
         -webkit-transition: var(--img-transition);
@@ -744,15 +747,14 @@ input {
     background-image: none;
 }
 
-/* Change color of pagination bullets */
-.swiper-pagination-bullet {
+.swiper-scrollbar {
     background: var(--sec-color) !important;
 }
 
-/* Change color of navigation arrows */
+/* Navigation arrows */
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--sec-color) !important;
+    color: var(--white-color) !important;
 }
 
 .menu {
@@ -787,9 +789,26 @@ input {
     &-item {
         text-align: left;
     }
-
     &-price {
         text-align: right;
+    }
+
+    &__exp {
+        background-color: var(--sec-color);
+        border-bottom: 10px solid var(--acc-color);
+        border-left: 10px solid var(--first-color);
+
+        .menu {
+            &-item,
+            &-price {
+                color: var(--body-color);
+                font-size: var(--h3-font-size);
+            }
+
+            &-price {
+                text-align: right;
+            }
+        }
     }
 }
 /*=============== APPOINTMENTS ===============*/
@@ -819,6 +838,14 @@ input {
 }
 
 /*=============== VIP ===============*/
+.vip {
+    background-color: #1f1f1f;
+
+    &__subtitle {
+        color: var(--white-color);
+    }
+}
+
 .video {
     &__container {
         padding-bottom: 1rem;
@@ -831,16 +858,30 @@ input {
 /*=============== SUBSCRIBE ===============*/
 .subscribe {
     &__bg {
-        background-color: var(--first-color);
+        background-color: #1f1f1f;
         padding: 2.5rem 0;
     }
-    &__title,
+    &__title {
+        border-left: none;
+        font-family: "Raleway";
+        font-size: var(--biggest-font-size);
+        background-color: var(--roy-black-color);
+        color: var(--roy-color);
+    }
+
     &__description {
-        color: var(--white-color);
+        color: var(--roy-text-color);
+    }
+
+    &__logo {
+        display: block;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
     }
 
     &__disclaimer {
-        color: var(--sec-color);
+        color: var(--roy-color);
         font-weight: var(--font-semi-bold);
     }
 }

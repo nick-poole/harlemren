@@ -387,7 +387,7 @@
 
             <div class="menu__group">
               <h3 class="section__subtitle">Book an Experience</h3>
-              <ul class="menu__list grid">
+              <ul class="menu__list menu__exp grid">
                 <li>
                   <span class="menu-item">The Classic Harlem</span>
                   <span class="menu-price">$</span>
@@ -477,12 +477,11 @@
                     steam facial mask scrub, and shaved head services.</span>
                 </div>
               </div>
-
             </div>
 
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>
@@ -538,18 +537,20 @@
 
       <!--==================== VIP ====================-->
       <section class="vip section" id="vip">
-        <h2 class="section__title">Renaissance Royalty Club</h2>
-        <h3 class="section__subtitle">Journey into the Splendor of Self-Care</h3>
+        <h2 class="section__title subscribe__title">Renaissance Royalty Club</h2>
+        <h3 class="section__subtitle vip__subtitle">Journey into the Splendor of Self-Care</h3>
+
+        <img src="assets/images/logos/royalty_club.png" alt="" class="subscribe__logo">
+
+        <p class="subscribe__description par f-par">
+          The Renaissance Royalty Club is an exclusive membership offering that transcends typical grooming services.
+          As a cherished member, you're granted access to a world of unprecedented rewards, exclusive benefits, and
+          bespoke experiences tailored just for you. Elevate your lifestyle with priority bookings, personalized
+          services, and a host of exclusive experiences. The Renaissance Royalty Club is more than just grooming -
+          it's a statement of individuality and sophistication. Secure your membership today and fully embrace the
+          legacy of The New Harlem Renaissance.</p>
 
         <div class="video__container container">
-          <p class="video__description par f-par">
-            The Renaissance Royalty Club is an exclusive membership offering that transcends typical grooming services.
-            As a cherished member, you're granted access to a world of unprecedented rewards, exclusive benefits, and
-            bespoke experiences tailored just for you. Elevate your lifestyle with priority bookings, personalized
-            services, and a host of exclusive experiences. The Renaissance Royalty Club is more than just grooming -
-            it's a statement of individuality and sophistication. Secure your membership today and fully embrace the
-            legacy of The New Harlem Renaissance.</p>
-
           <div class="video__content">
             <video id="video-file" autoplay loop muted>
               <source src="assets/videos/black-card-vip_gabby-k_(1080p).mp4" type="video/mp4">
@@ -561,15 +562,16 @@
         <div class="subscribe">
           <div class="subscribe__bg">
             <div class="subscribe__container container">
-              <h3 class="section__title subscribe__title">Sign Up</h3>
+              <h3 class=" section__title subscribe__title">Sign Up</h3>
 
               <p class="subscribe__description par f-par">
-                Interested in joining our Renaissance Royalty Club? Leave us your name and phone number and we'll be in
+                Interested in joining the Renaissance Royalty Club? Leave your name and phone number and Kennard will
+                be in
                 touch to discuss the next steps. Embrace a unique journey of self-care and sophistication. Sign up now
                 and stay connected with The New Harlem Renaissance.
               </p>
 
-              <p class="subscribe__disclaimer par">
+              <p class="subscribe__disclaimer par" id="subscribe-disclaimer">
                 Please note that this offer is exclusively available to residents of Baltimore, Maryland and its
                 surrounding locales.
               </p>
@@ -601,11 +603,15 @@
           </div>
 
           <div class="sponsor__content">
+            <img src="assets/images/logos/nylestyle_bg-rmv.png" alt="" class="sponsor__img">
+          </div>
+
+          <div class="sponsor__content">
             <img src="assets/images/logos/blvk_long-white.png" alt="" class="sponsor__img">
           </div>
 
           <div class="sponsor__content">
-            <img src="assets/images/logos/nylestyle_bg-rmv.png" alt="" class="sponsor__img">
+            <img src="assets/images/logos/royalty__club-white.png" alt="" class="sponsor__img">
           </div>
         </div>
       </section>
@@ -675,10 +681,7 @@
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
       <div class="footer__container container grid">
-
         <div class="footer__content grid">
-
-
           <div class="footer__data">
 
             <!-- <img src="assets/images/logos/tnhr.jpg" alt="" class="footer__logo"> -->
@@ -712,10 +715,14 @@
               <li class="footer__item">
                 <a href="#mto" class="footer__link">Meet The Owner</a>
               </li>
+
+              <li class="footer__item">
+                <a href="#vip" class="footer__link">Royalty Club</a>
+              </li>
+
               <li class="footer__item">
                 <a href="#cta" class="footer__link">Contact</a>
               </li>
-
             </ul>
           </div>
 
