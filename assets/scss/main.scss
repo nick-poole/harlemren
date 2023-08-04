@@ -322,6 +322,18 @@ input {
         cursor: pointer;
     }
 }
+.nav__link.rc,
+.scroll-header.nav__link.rc {
+    padding: 0.3rem;
+    background-color: var(--roy-black-color);
+    color: var(--roy-color);
+
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
 
 /* show menu */
 .show-menu {
@@ -343,6 +355,47 @@ input {
     -moz-transition: 0.5s ease-in-out;
     -ms-transition: 0.5s ease-in-out;
     -o-transition: 0.5s ease-in-out;
+}
+
+#header.past-vip-section {
+    background-color: var(--roy-black-color);
+    box-shadow: 0px 1.5px 0px var(--roy-text-color);
+
+    .nav {
+        &__logo {
+            color: var(--roy-color);
+            font-family: "Raleway";
+        }
+        &__toggle {
+            color: var(--roy-color);
+        }
+
+        &__menu {
+            @media screen and (max-width: 1024px) {
+                background-color: var(--roy-color);
+
+                .nav__link {
+                    font-family: "Raleway";
+                    color: var(--roy-black-color);
+
+                    &:hover {
+                        color: var(--white-color);
+                    }
+                }
+
+                .nav__link.rc.active-link {
+                    color: var(--roy-color);
+                    &::before {
+                        background-color: var(--white-color);
+                    }
+                }
+            }
+        }
+
+        &__link.rc {
+            background-color: var(--white-color);
+        }
+    }
 }
 
 /* Active link */

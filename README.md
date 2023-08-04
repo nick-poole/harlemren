@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/4/23
 
+- FEAT(headernav): Enhance VIP section and header interaction
+
 - FEAT(acuity): Update VIP section with a new logo and color scheme. Enhanced user navigation experience by adding a scrollbar to the Swiper component.
 
 - FEAT(acuity): Implemented Acuity Scheduling iframe integration, adjusted iframe width to 100% for responsive design and centered the iframe for a balanced layout."

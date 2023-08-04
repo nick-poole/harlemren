@@ -33,16 +33,30 @@ function linkAction() {
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /*======= CHANGE BACKGROUND HEADER =======*/
-function scrollHeader() {
+function scrollHeaderAndCheckVip() {
     const header = document.getElementById("header");
+    const vipSection = document.querySelector(".vip");
+
     // If the scroll is greater than 100 viewport height, v
-    if (this.scrollY >= 80)
+    if (this.scrollY >= 80) {
         //add the scroll-header class to the header tag
         header.classList.add("scroll-header");
+    }
     //else remove
     else header.classList.remove("scroll-header");
+
+    // Get the position of the vipSection
+    let bounds = vipSection.getBoundingClientRect();
+
+    // If scroll is past the vipSection
+    if (bounds.top <= 200 && bounds.bottom > 50) {
+        header.classList.add("past-vip-section");
+    } else {
+        header.classList.remove("past-vip-section");
+    }
 }
-window.addEventListener("scroll", scrollHeader);
+
+window.addEventListener("scroll", scrollHeaderAndCheckVip);
 
 /*============ SWIPER SERVICES ============*/
 let swiper = new Swiper(".swiper-container", {
