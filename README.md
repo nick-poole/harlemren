@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/4/23
+
+- FEAT(acuity): Implemented Acuity Scheduling iframe integration, adjusted iframe width to 100% for responsive design and centered the iframe for a balanced layout."
+
 8/3/23
 
 - FEAT(acuity): Integrated Acuity test account and Google Maps iframe embed.
