@@ -64,7 +64,7 @@
     --img-scale: scale(1.1);
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 1024px) {
     :root {
         --biggest-font-size: 4rem;
         --h1-font-size: 2.25rem;
@@ -90,6 +90,7 @@ html {
 body {
     margin: var(--header-height) 0 0 0;
     min-width: 310px;
+    overflow-x: hidden;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -134,9 +135,8 @@ input {
     outline: none;
 }
 
-.main {
-    overflow-x: hidden;
-}
+// .main {
+// }
 
 /*=============== REUSABLES ===============*/
 .section {
@@ -416,22 +416,30 @@ input {
 
 /*=============== HOME ===============*/
 .home {
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        object-position: 8% top;
-        // transform: scale(1.3);
-        // -webkit-transform: scale(1.3);
-        // -moz-transform: scale(1.3);
-        // -ms-transform: scale(1.3);
-        // -o-transform: scale(1.3);
-        // filter: blur(0.7px);
-        // -webkit-filter: blur(0.7px);
-    }
+    background-image: url(/assets/images/kaysha-125-lenox_ave.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    max-height: 3448px;
+
+    // &__img {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+
+    //     object-fit: cover;
+    //     object-position: 8% top;
+    //     //object-position: 50% 50%;
+    //     // transform: scale(1.3);
+    //     // -webkit-transform: scale(1.3);
+    //     // -moz-transform: scale(1.3);
+    //     // -ms-transform: scale(1.3);
+    //     // -o-transform: scale(1.3);
+    //     // filter: blur(0.7px);
+    //     // -webkit-filter: blur(0.7px);
+    // }
     &__container {
         position: relative;
         height: calc(100vh - var(--header-height));
@@ -500,7 +508,7 @@ input {
         align-items: center;
         column-gap: 0.5rem;
         position: absolute;
-        right: 0;
+        right: 1rem;
         bottom: 1rem;
         width: 300px;
 
@@ -1229,11 +1237,6 @@ input {
     }
 
     .home {
-        &__data {
-            &-title {
-                font-size: var(--biggest-font-size);
-            }
-        }
         // &__social {
         //     &-link {
         //         font-size: 1.4rem;
@@ -1289,6 +1292,14 @@ input {
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
+    .home {
+        &__data {
+            &-title {
+                font-size: var(--biggest-font-size);
+            }
+        }
+    }
+
     .video__container {
         display: grid;
         grid-template-columns: 0.6fr;
@@ -1327,19 +1338,18 @@ input {
         &__container {
             margin-top: var(--header-height);
             height: 100vh;
-            grid-template-rows: 1.8fr 0.5fr;
+            //grid-template-rows: 1.8fr 0.5fr;
         }
-        &__data {
-            align-self: flex-end;
-        }
+
         &__social {
             //flex-direction: row;
             align-self: flex-end;
+
             margin-bottom: 3rem;
             column-gap: 2.5rem;
         }
         &__info {
-            bottom: 3rem;
+            bottom: 6rem;
         }
     }
 
@@ -1447,10 +1457,25 @@ input {
     }
 
     .home {
+        background-size: fill;
+        background-position-x: center;
+        background-position-y: center;
+
         &__container {
             grid-template-rows: 2fr 0.5fr;
         }
+        &__data {
+            justify-self: end;
+        }
+        &__social {
+            position: absolute;
+            top: 4rem;
+            left: 2rem;
+        }
         &__info {
+            left: 2rem;
+            bottom: 4rem;
+
             width: 328px;
             grid-template-columns: 1fr 2fr;
             column-gap: 2rem;
@@ -1511,10 +1536,10 @@ input {
     body {
         margin: 0;
     }
-    // .home {
-    //     &__container,
-    //     &__img {
-    //         height: 640px;
-    //     }
-    // }
+    .home {
+        &__container,
+        &__img {
+            height: 640px;
+        }
+    }
 }
