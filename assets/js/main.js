@@ -139,4 +139,15 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
+/*==========  CLEAR FORM AFTER SUBMISSION ========== */
+document.getElementById("fs-frm").addEventListener("submit", function () {
+    setTimeout(function () {
+        document.getElementById("name").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("message").value = "";
+    }, 5000);
+});
+
 /*==========  SCROLL REVEAL ANIMATION ========== */

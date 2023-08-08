@@ -852,7 +852,6 @@ input {
             rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
         border-left: 10px solid var(--acc-color);
-        border-bottom: 10px solid var(--first-color);
 
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -1004,6 +1003,8 @@ input {
 
 /*=============== CONTACT ===============*/
 .contact {
+    width: 100%;
+    min-width: 300px;
     &__banner {
         &-img {
             display: block;
@@ -1050,79 +1051,173 @@ input {
     &__email {
         color: var(--sec-color);
     }
+
+    &__form {
+        min-width: 250px;
+        max-width: 400px;
+        margin: 2rem auto;
+        padding: 1rem;
+
+        background-color: var(--white-color);
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+            rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+        border: 1px solid var(--first-color);
+
+        border-left: 10px solid var(--acc-color);
+        border-bottom: 10px solid var(--first-color);
+
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        transform: translateZ(0);
+        //text-align: center;
+    }
 }
 
-.form {
-    width: 100%;
-    max-width: 500px;
-    margin: 25px auto;
+// .form {
+// width: 100%;
+// max-width: 500px;
+// margin: 25px auto;
 
-    &__field,
-    &__message,
-    &__submit {
+// &__field,
+// &__message,
+// &__submit {
+//     width: 100%;
+//     padding: 15px;
+
+//     outline: none;
+
+//     font-family: "Lato", sans-serif;
+//     font-size: 0.875em;
+
+//     background-color: var(--body-color);
+//     border-bottom: solid 1px var(--text-color);
+//     transition: all 0.3s ease-in-out;
+//     -webkit-transition: all 0.3s ease-in-out;
+//     -moz-transition: all 0.3s ease-in-out;
+//     -ms-transition: all 0.3s ease-in-out;
+
+// &,
+// &::placeholder {
+//     color: var(--text-color-light);
+//     font-size: 0.875em;
+// }
+
+// &:focus::placeholder {
+//     background-color: var(--sec-color);
+//     color: var(--input-color);
+// }
+
+// &:hover {
+//     background: var(--text-color-light);
+//     color: var(--text-color);
+// }
+
+// &:hover::placeholder {
+//     color: var(--title-color);
+// }
+
+// &:hover:focus::placeholder {
+//     color: var(--sec-color);
+// }
+
+// &__field {
+//     //margin: 2rem auto;
+//     //padding: 2rem 0;
+//     height: 50px;
+//     border-bottom: 1px solid var(--title-color);
+//     background-color: var(--white-color);
+
+//     &-label {
+//         text-align: left;
+//     }
+// }
+
+// &__message {
+//     height: 110px;
+//     resize: none;
+// }
+
+//     &__submit {
+//         border-top: none;
+//         font-weight: var(--font-semi-bold);
+//         color: var(--first-color);
+//         cursor: pointer;
+//         color: var(--sec-color);
+//         background-color: var(--first-color);
+
+//         &:hover {
+//             background-color: var(--sec-color);
+//             color: var(--text-color);
+//         }
+//     }
+// }
+
+.fieldset {
+    display: grid;
+    row-gap: 2rem;
+
+    min-width: 220px;
+    max-width: 400px;
+    margin-bottom: var(--mb-2-5);
+    border: none;
+
+    &__group {
+        position: relative;
+        height: 3rem;
+        border-bottom: 1px solid var(--text-color-light);
+    }
+
+    &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        padding: 15px;
-
-        outline: none;
-
-        font-family: "Lato", sans-serif;
-        font-size: 0.875em;
-
-        background-color: var(--body-color);
-        border: solid 1px var(--text-color);
-        transition: all 0.3s ease-in-out;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-
-        &,
-        &::placeholder {
-            color: var(--text-color-light);
-            font-size: 0.875em;
-        }
-
-        &:focus::placeholder {
-            background-color: var(--sec-color);
-            color: var(--input-color);
-        }
-
-        &:hover {
-            background: var(--text-color-light);
-            color: var(--text-color);
-        }
-
-        &:hover::placeholder {
-            color: var(--title-color);
-        }
-
-        &:hover:focus::placeholder {
-            color: var(--sec-color);
-        }
-    }
-
-    &__field {
-        height: 50px;
-        border-bottom: none;
-    }
-
-    &__message {
-        height: 110px;
-        resize: none;
-    }
-
-    &__submit {
-        border-top: none;
-        font-weight: var(--font-semi-bold);
+        height: 100%;
+        padding: 1rem 1rem 1rem 0;
+        background: none;
         color: var(--first-color);
-        cursor: pointer;
-        color: var(--sec-color);
-        background-color: var(--first-color);
-
-        &:hover {
-            background-color: var(--sec-color);
-            color: var(--text-color);
-        }
+        border: none;
+        outline: none;
+        z-index: 1;
     }
+
+    // &__area {
+    //     height: 7rem;
+    // }
+
+    &__label {
+        position: absolute;
+        top: 0.75rem;
+        width: 100%;
+        font-size: var(--small-font-size);
+        color: var(--first-color-alt);
+        transition: 0.3s;
+    }
+}
+
+textarea {
+    resize: none;
+}
+
+/*input focus move up label*/
+textarea:focus + .fieldset__label,
+.fieldset__input:focus + .fieldset__label {
+    top: -0.75rem;
+    left: 0;
+    font-size: var(--smaller-font-size);
+    z-index: 10;
+}
+
+/*input focus sticky top label*/
+.fieldset__input:not(:placeholder-shown).fieldset__input:not(:focus) + .fieldset__label {
+    top: -0.75rem;
+    font-size: var(--smaller-font-size);
+    z-index: 10;
 }
 
 /*=============== FOOTER ===============*/
