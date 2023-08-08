@@ -900,26 +900,47 @@ input {
 
 /*=============== VIP ===============*/
 .vip {
-    background-color: #1f1f1f;
+    background-color: var(--roy-black-color);
+
+    &__content {
+        max-width: 968px;
+        margin: 0 auto;
+    }
 
     &__subtitle {
-        color: var(--white-color);
+        color: var(--sec-color);
     }
 }
 
 .video {
     &__container {
-        padding-bottom: 1rem;
+        //width: 100%;
+        padding: 1rem;
+        background-color: var(--roy-color);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
+
     &__description {
         margin-bottom: var(--mb-2-5);
     }
 }
 
+#video-file {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 /*=============== SUBSCRIBE ===============*/
-.subscribe {
+.vip {
     &__bg {
-        background-color: #1f1f1f;
+        //background-color: #1f1f1f;
         padding: 2.5rem 0;
     }
     &__title {
@@ -932,6 +953,7 @@ input {
 
     &__description {
         color: var(--roy-text-color);
+        margin-bottom: 3rem;
     }
 
     &__logo {
@@ -944,6 +966,7 @@ input {
     &__disclaimer {
         color: var(--roy-color);
         font-weight: var(--font-semi-bold);
+        margin-top: 2rem;
     }
 }
 
@@ -1536,10 +1559,10 @@ input {
     body {
         margin: 0;
     }
-    .home {
-        &__container,
-        &__img {
-            height: 640px;
-        }
-    }
+    // .home {
+    //     &__container,
+    //     &__img {
+    //         height: 640px;
+    //     }
+    // }
 }

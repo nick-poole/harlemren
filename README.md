@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/7/23
+
+- FEAT(vip): Refit max-width on vip section & restyle video container.
+
 8/4/23
 
 - FEAT(headernav): Enhance VIP section and header interaction
