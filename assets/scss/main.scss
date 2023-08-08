@@ -993,22 +993,29 @@ input {
 .sponsor {
     background-color: var(--white-color);
     &__container {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         justify-items: center;
         row-gap: 3.5rem;
     }
     &__img {
-        //width: 90px;
-        transition: var(--img-transition);
-        -webkit-transition: var(--img-transition);
-        -moz-transition: var(--img-transition);
-        -ms-transition: var(--img-transition);
-        -o-transition: var(--img-transition);
+        width: 150px;
     }
 }
 
 /*=============== CONTACT ===============*/
 .contact {
+    &__banner {
+        &-img {
+            display: block;
+            width: 100vw;
+            max-width: 1200px;
+            height: 400px;
+            margin: 0 auto;
+            object-fit: cover;
+            object-position: center bottom;
+            //overflow: hidden;
+        }
+    }
     &__container {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -1124,14 +1131,40 @@ input {
         row-gap: 5rem;
     }
     &__logo {
-        max-width: 220px;
+        max-width: 200px;
         height: auto;
     }
     &__content {
         margin-left: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d";
         row-gap: 2rem;
     }
+
+    &-logo {
+        grid-area: a;
+    }
+
+    &-label {
+        flex-direction: column;
+
+        grid-area: b;
+    }
+
+    &-brand {
+        grid-area: c;
+    }
+    &-aff {
+        grid-area: d;
+    }
+
+    &-legal {
+        grid-area: e;
+    }
+
     &__title,
     &__subtitle {
         font-size: var(--h3-font-size);
@@ -1365,8 +1398,20 @@ input {
             //gap: 2rem;
         }
     }
-}
 
+    .footer {
+        &__content {
+            grid-template-areas:
+                "a a c"
+                "a a c"
+                "b b e"
+                "b b e"
+                "d d e";
+
+            row-gap: 2rem;
+        }
+    }
+}
 @media screen and (min-width: 768px) {
     body {
         margin: 0;
@@ -1436,6 +1481,19 @@ input {
             margin-left: auto;
             margin-right: auto;
             padding-top: 2rem;
+        }
+    }
+
+    .footer {
+        &__content {
+            grid-template-areas:
+                "a a b b c d e"
+                "a a b b c d e";
+
+            column-gap: 2rem;
+        }
+        &-label {
+            row-gap: 0.75rem;
         }
     }
 }
@@ -1562,8 +1620,14 @@ input {
         }
     }
 
+    .sponsor {
+        &__container {
+            justify-items: space-evenly;
+        }
+    }
+
     .footer__content {
-        justify-items: center;
+        column-gap: 4rem;
     }
 }
 

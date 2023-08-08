@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/8/23
+
+- FEAT(footer): Integrate footer logo and reformat footer grid with grid areas.
+
 8/7/23
 
 - FEAT(headernav): Restyle header cta link to a button
