@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/8/23
 
+- FEAT(mto): Revise mto section title and subtitle per clients request
+
 - FEAT(footer): Integrate footer logo and reformat footer grid with grid areas.
 
 8/7/23
