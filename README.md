@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/8/23
 
+- FIX(headernav): Resolve active links issue so the 'Behind the chair' nav__link highlights when scrolled past.
+
 - FEAT(mto): Revise mto section title and subtitle per clients request
 
 - FEAT(footer): Integrate footer logo and reformat footer grid with grid areas.
