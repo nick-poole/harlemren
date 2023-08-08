@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/7/23
 
+- FEAT(headernav): Restyle header cta link to a button
+
 - FEAT(vip): Refit max-width on vip section & restyle video container.
 
 8/4/23
