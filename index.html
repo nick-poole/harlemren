@@ -663,42 +663,51 @@
             <form class="form" id="fs-frm" name="form" accept-charset="utf-8" action="https://formspree.io/f/mnqknkbj"
               method="post">
 
-              <fieldset class="fieldset" id="fs-frm-inputs">
+              <div class="contact__form-inset">
+                <fieldset class="fieldset" id="fs-frm-inputs">
+                  <div class="fieldset__group">
+                    <input class="fieldset__input" name="name" id="name" placeholder=" " type="text"
+                      title="Government names only, please">
+                    <label for="name" class="fieldset__label">Name</label>
+                  </div>
 
-                <div class="fieldset__group">
-                  <input class="fieldset__input" name="name" id="name" placeholder=" " type="text" required="">
-                  <label for="name" class="fieldset__label">Name</label>
-                </div>
+                  <div class="fieldset__group">
+                    <input class="fieldset__input" name="phone" id="phone" type="tel" placeholder=" "
+                      pattern="(\+\d{1,2}\s?)?(\()?(\d{3})(?(2)\))[-.\s]?\d{3}[-.\s]\d{4}"
+                      title="Format: (410) 867-5309, 410-867-5309, or +1 (410) 867-5309" required>
+                    <label for="phone" class="fieldset__label">Phone</label>
+                  </div>
 
-                <div class="fieldset__group">
-                  <input class="fieldset__input" name="phone" id="phone" type="phone" placeholder=" ">
-                  <label for="phone" class="fieldset__label">Phone</label>
-                </div>
+                  <div class="fieldset__group">
+                    <input class="fieldset__input" type="email" name="_replyto" id="email" placeholder=" " required="">
+                    <label for="email" class="fieldset__label">Email</label>
+                  </div>
 
-                <div class="fieldset__group">
-                  <input class="fieldset__input" type="email" name="_replyto" id="email" placeholder=" " required="">
-                  <label for="email" class="fieldset__label">Email</label>
-                </div>
+                  <label class="fieldset__label-subject">
+                    Subject
+                    <select name="subject" id="subject" required="">
+                      <option value="" selected="" disabled="">------ Select ------</option>
 
+                      <option value="Question/Inquiry">Question/Inquiry</option>
+                      <option value="Availibility">Availibility</option>
+                      <option value="Concern">Concern</option>
+                      <option value="Royalty Club">Royalty Club</option>
+                      <option value="Review">Review</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
 
-                <!-- <select name="subject" id="subject" required="">
-                  <option value="" selected="" disabled="">-------- Select --------</option>
-                  <option value="Question/Inquiry">Question/Inquiry</option>
-                  <option value="Availibility">Availibility</option>
-                  <option value="Concern">Concern</option>
-                  <option value="Royalty Club">Royalty Club</option>
-                  <option value="Review">Review</option>
-                  <option value="Other">Other</option>
-                </select>
-                <label for="subject" class="fieldset__label">Subject</label> -->
+                  <div class="fieldset__group fieldset__area">
+                    <textarea class="fieldset__input" name="message" id="message" placeholder=" "
+                      required=""></textarea>
+                    <label for="message" class="fieldset__label">Message</label>
+                  </div>
+                </fieldset>
+              </div>
 
-                <div class="fieldset__group fieldset__area">
-                  <label for="message" class="fieldset__label">Message</label>
-                  <textarea class="fieldset__input" name="message" id="message" placeholder=" " required=""></textarea>
-                </div>
-              </fieldset>
-
-              <input class="form__field form__submit" id="submit" type="submit" value="SEND">
+              <div class="form__footer">
+                <input class="form__submit" id="submit" type="submit" value="SEND" disabled>
+              </div>
             </form>
           </div>
         </div>

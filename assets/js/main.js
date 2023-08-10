@@ -150,4 +150,47 @@ document.getElementById("fs-frm").addEventListener("submit", function () {
     }, 5000);
 });
 
+/* ========== REMOVE SELECT ARROWS ========== */
+document.addEventListener("DOMContentLoaded", function () {
+    let selectElement = document.querySelector("#subject");
+
+    selectElement.addEventListener("change", function () {
+        if (this.value) {
+            this.parentElement.classList.add("has-value");
+        } else {
+            this.parentElement.classList.remove("has-value");
+        }
+    });
+});
+
+/* ========== CTA FORM VALIDATION ========== */
+//Get the form/inputs/submit
+const form = document.getElementById("fs-frm");
+const inputs = form.querySelectorAll("input, select, textarea");
+const submitButton = document.getElementById("submit");
+
+//Check validity
+function checkFormValidity() {
+    let isFormValid = true;
+
+    // Loop through each input and check its validity
+    inputs.forEach((input) => {
+        if (!input.checkValidity()) {
+            isFormValid = false;
+        }
+    });
+
+    // Enable or disable the submit button based on form validity
+    if (isFormValid) {
+        submitButton.removeAttribute("disabled");
+    } else {
+        submitButton.setAttribute("disabled", "true");
+    }
+}
+
+// Attach event listeners to input elements
+inputs.forEach((input) => {
+    input.addEventListener("input", checkFormValidity);
+});
+
 /*==========  SCROLL REVEAL ANIMATION ========== */

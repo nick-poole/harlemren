@@ -121,6 +121,14 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/10/23
+
+- FEAT(cta): Revamp and Enhance Contact Form Functionality
+
+  1. **Fixed Float Label Issue**Fixed the float labels for all input fields, ensuring a smooth transition and improved UI experience for users.
+  2. **Select Dropdown Arrow Removal**: the default dropdown arrows in the select input were replaced with custom Unicode arrows. This brings a consistent look across all browsers. Implemented JavaScript to dynamically hide the custom Unicode arrows once a selection is made, enhancing the UI.
+  3. **CTA Form Validation with JavaScript**: Integrated JavaScript for real-time form validation. The submit button is now disabled by default and only activates when the input fields meet specified criteria, providing an immediate feedback mechanism to the user. Incorporated regex patterns to validate the phone number input field, ensuring entries match the desired formats (e.g., `(123) 456-7890`, `+1 (123) 456-7890`, `123-456-7890`).
+
 8/8/23
 
 - FIX(headernav): Resolve active links issue so the 'Behind the chair' nav__link highlights when scrolled past.
