@@ -150,19 +150,6 @@ document.getElementById("fs-frm").addEventListener("submit", function () {
     }, 5000);
 });
 
-/* ========== REMOVE SELECT ARROWS ========== */
-document.addEventListener("DOMContentLoaded", function () {
-    let selectElement = document.querySelector("#subject");
-
-    selectElement.addEventListener("change", function () {
-        if (this.value) {
-            this.parentElement.classList.add("has-value");
-        } else {
-            this.parentElement.classList.remove("has-value");
-        }
-    });
-});
-
 /* ========== CTA FORM VALIDATION ========== */
 //Get the form/inputs/submit
 const form = document.getElementById("fs-frm");

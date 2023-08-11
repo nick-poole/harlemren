@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/11/23
+
+- FIX(w3c): Resolve 100vw margin-right issue. Remove select unicode characters from CTA form & handle w3c initial w3c validation
+
 8/10/23
 
 - FEAT(cta): Revamp and Enhance Contact Form Functionality
