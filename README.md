@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/16/23
 
+- FEAT(main): Create and link robots(dot)txt and sitemap(dot)xml
+
 - FEAT(seo): Initial SEO meta tag structuring
 
 8/11/23
