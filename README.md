@@ -121,7 +121,7 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
-8/16/23
+8/22/23
 
 - FEAT(cta): Update acuity & formspree links with client accounts
 
