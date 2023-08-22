@@ -121,7 +121,7 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
-8/16/23
+8/22/23
 
 - FEAT(seo): Initial SEO meta tag structuring
 
