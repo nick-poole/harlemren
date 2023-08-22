@@ -269,19 +269,17 @@ input {
     justify-content: space-between;
     align-items: center;
 
-    &__logo,
     &__toggle {
-        font-size: var(--h2-font-size);
+        font-size: var(--h1-font-size);
     }
 
     &__logo {
-        color: var(--first-color);
-        font-family: var(--title-font);
+        height: 100%;
 
-        // &-img {
-        //     height: 75px;
-        //     width: 75px;
-        // }
+        &-img {
+            height: 100%;
+            width: auto;
+        }
     }
 
     &__toggle {
@@ -327,8 +325,8 @@ input {
     }
     &__close {
         position: absolute;
-        top: 0.75rem;
-        right: 1rem;
+        top: 1.5rem;
+        right: 1.5rem;
         font-size: 1.5rem;
         color: var(--title-color);
         cursor: pointer;
@@ -352,21 +350,16 @@ input {
     right: 0;
 }
 
-/* Change background header */
+/* Change background header when scrolled*/
 .scroll-header {
     background-color: var(--first-color);
     box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 0.1);
 
-    & .nav__logo {
-        color: var(--white-color);
-        font-family: var(--title-font);
-    }
-
-    transition: 0.5s ease-in-out;
-    -webkit-transition: 0.5s ease-in-out;
-    -moz-transition: 0.5s ease-in-out;
-    -ms-transition: 0.5s ease-in-out;
-    -o-transition: 0.5s ease-in-out;
+    transition: 0.2 ease-in-out;
+    -webkit-transition: 0.2 ease-in-out;
+    -moz-transition: 0.2 ease-in-out;
+    -ms-transition: 0.2 ease-in-out;
+    -o-transition: 0.2 ease-in-out;
 }
 
 #header.past-vip-section {
@@ -374,10 +367,6 @@ input {
     box-shadow: 0px 1.5px 0px var(--roy-text-color);
 
     .nav {
-        &__logo {
-            color: var(--roy-color);
-            font-family: "Raleway";
-        }
         &__toggle {
             color: var(--roy-color);
         }

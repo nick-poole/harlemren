@@ -123,6 +123,10 @@ Formspree handles submissions from the Contact Form.
 
 8/22/23
 
+- FEAT(headernav): Update nav__logo for all scroll states & reposition nav__close for close/open position consistency
+
+8/16/23
+
 - FEAT(cta): Update acuity & formspree links with client accounts
 
 - FEAT(main): Create and link robots(dot)txt and sitemap(dot)xml

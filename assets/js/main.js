@@ -36,14 +36,21 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 function scrollHeaderAndCheckVip() {
     const header = document.getElementById("header");
     const vipSection = document.querySelector(".vip");
+    const navLogo = document.getElementById("navLogo");
 
-    // If the scroll is greater than 100 viewport height, v
+    // If the scroll is greater than 100 viewport height
     if (this.scrollY >= 80) {
-        //add the scroll-header class to the header tag
+        // Add the scroll-header class to the header tag
         header.classList.add("scroll-header");
+
+        // Update the logo src
+        navLogo.src = "assets/images/logos/6.webp";
+    } else {
+        header.classList.remove("scroll-header");
+
+        // Restore to original logo
+        navLogo.src = "assets/images/logos/7.webp";
     }
-    //else remove
-    else header.classList.remove("scroll-header");
 
     // Get the position of the vipSection
     let bounds = vipSection.getBoundingClientRect();
@@ -51,6 +58,9 @@ function scrollHeaderAndCheckVip() {
     // If scroll is past the vipSection
     if (bounds.top <= 200 && bounds.bottom > 50) {
         header.classList.add("past-vip-section");
+
+        // Update for royalty logo
+        navLogo.src = "assets/images/logos/8.webp";
     } else {
         header.classList.remove("past-vip-section");
     }
