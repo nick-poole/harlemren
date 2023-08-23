@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/22/23
 
+- FEAT(headernav): Removed home nav__link and resized nav__menu
+
 - FEAT(headernav): Update nav__logo for all scroll states & reposition nav__close for close/open position consistency
 
 8/16/23
