@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+8/24/23
+
+- FEAT(main): Initial a11y changes adressing empty links and jsutified content.
+
 8/22/23
 
 - FEAT(headernav): Removed home nav__link and resized nav__menu

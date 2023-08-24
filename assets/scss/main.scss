@@ -194,7 +194,7 @@ input {
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-0-75);
     padding: 0 15px;
-    text-align: justify;
+    text-align: left;
     line-height: 1.6;
 }
 
@@ -482,6 +482,10 @@ input {
         }
         &-icon {
             font-size: 1.7rem;
+        }
+        &-button {
+            font-size: 18px;
+            font-weight: var(--font-semi-bold);
         }
     }
     &__info {
