@@ -117,16 +117,18 @@
           </div>
 
           <div class="home__info">
-            <div>
-              <span class="home__info-title">Home of the <br>Self Care <br> Sanctuary</span>
-              <a href="#services" class="button--flex button--link home__info-button">
-                Learn More<i class="ri-arrow-down-line"></i>
+            <div class="home__inset">
+              <span class="home__info-title">Home of the <br>Self-Care <br> Sanctuary</span>
+              <a href="#services" class="home__info-button">
+                Learn More
+                <i class="ri-arrow-down-line"></i>
               </a>
             </div>
 
+
             <div class="home__info-overlay">
               <img src="assets/images/gustavo-fring.jpg"
-                alt="Client reclining  back in barber chair enjoying grooming services with a contented grin, illuminated by soft light"
+                alt="Client reclining in barber chair with a contented grin, illuminated by soft light."
                 class="home__info-img">
             </div>
           </div>
@@ -142,11 +144,8 @@
           <div class="about__data">
             <p class="about__description par f-par">
               At the intersection of tradition and trend, The New Harlem Renaissance emerges as a beacon of grooming
-              excellence, embodying the spirit of the historic Harlem Renaissance in every cut, shave, and trim.
-            </p>
-
-            <p class="about__description par">
-              Built on the foundational values of precision, craftsmanship, and client satisfaction, The New Harlem
+              excellence, embodying the spirit of the historic Harlem Renaissance in every cut, shave, and trim. Built
+              on the foundational values of precision, craftsmanship, and client satisfaction, The New Harlem
               Renaissance is a celebration of style, culture, and individuality. Here, each service is a homage to the
               timeless sophistication of the Harlem Renaissance, providing clientele
               with not just superior grooming services, but an opportunity to partake in a rich cultural legacy.
@@ -155,7 +154,7 @@
         </div>
 
         <img src="assets/images/teenie_harris-carnegie.jpg"
-          alt="Barbers cutting hair in Gator’s barbershop circa 1950. Photo by Charles “Teenie” Harris, via the Carnegie Museum of Art."
+          alt="Barbers at Gator’s shop, 1950. By Charles 'Teenie' Harris, Carnegie Museum of Art."
           class="about__img-zero">
       </section>
 
@@ -202,8 +201,8 @@
       <article class="mto section" id="mto">
         <h2 class="section__title">Behind The Chair</h2>
         <h3 class="section__subtitle">Meet Your Style Expert</h3>
-        <img src="assets/images/k-perry-prof.jpg"
-          alt="Image of Kennard Perry, Master Barber and visionary behind New Harlem Renaissance" class="mto__img">
+        <img src="assets/images/k-perry-prof.jpg" alt="Kennard Perry, Barber and founder of New Harlem Renaissance."
+          class="mto__img">
 
         <div class="mto__container container">
           <div class="mto__content grid">
@@ -538,9 +537,15 @@
               You'll be informed of these prior to service delivery, ensuring there are no surprises when it comes
               time for payment.
               Timely communication about any additional services you'd like to add helps in providing a smooth and
-              enjoyable experience. If you have any questions, do not hesitate to contact <a href="#cta">Kennard</a>.
+              enjoyable experience. If you have any questions, do not hesitate to contact <a href="#cta"
+                class="aria-link">Kennard</a>.
             </p>
           </div>
+        </div>
+
+        <div class="visually-hidden" role="alert" aria-live="polite">
+          If you're using a screen reader and encounter difficulties using the scheduler, please contact Kennard
+          directly for booking assistance. <a href="#cta">Contact Kennard</a>
         </div>
 
         <div class="acuity-embed">
@@ -568,26 +573,24 @@
 
           <div class="video__container container">
             <div class="video__content">
-              <video id="video-file" autoplay loop muted>
-                <source src="assets/videos/black-card-vip_gabby-k_(1080p).mp4" type="video/mp4">
-              </video>
+              <img src="assets/images/roy_card.png" alt="" class="vip__card-img">
             </div>
           </div>
 
           <!--===== SUBSCRIBE =====-->
           <div class="subscribe">
-            <div class="vip__bg">
+            <div class="subscribe__bg">
               <div class="vip__container container">
-                <h3 class=" section__title vip__title">Sign Up</h3>
+                <h3 class="section__title vip__title">Sign Up</h3>
 
-                <p class="vip__description par f-par">
+                <p class="subscribe__description par f-par">
                   Interested in joining the Renaissance Royalty Club? <a href="#cta">Send a message</a> and Kennard will
                   be in
                   touch to discuss the next steps. Embrace a unique journey of self-care and sophistication. Sign up now
                   and stay connected with The New Harlem Renaissance.
                 </p>
 
-                <p class="vip__disclaimer par" id="subscribe-disclaimer">
+                <p class="subscribe__disclaimer par" id="subscribe-disclaimer">
                   Please note that this offer is exclusively available to residents of Baltimore, Maryland and its
                   surrounding locales.
                 </p>
@@ -668,6 +671,7 @@
 
               <div class="contact__form-inset">
                 <fieldset class="fieldset" id="fs-frm-inputs">
+                  <legend class="visually-hidden">Send Kennard a Message or Inquiry</legend>
                   <div class="fieldset__group">
                     <input class="fieldset__input" name="name" id="name" placeholder=" " type="text"
                       title="Government names only, please">
@@ -730,7 +734,8 @@
         <div class="footer__content grid">
 
           <div class="footer__data footer-logo">
-            <img src="assets/images/logos/tnhr-removebg.png" alt="" class="footer__logo">
+            <img src="assets/images/logos/tnhr-removebg.png" alt="Vintage New Harlem Renaissance Logo"
+              class="footer__logo">
           </div>
 
           <div class="footer__data footer-label flex">

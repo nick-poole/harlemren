@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 8/24/23
 
+- FEAT(a11y): Resolved a11y issues including contrast, alt-text, and structural elements.
+
 - FEAT(main): Initial a11y changes adressing empty links and jsutified content.
 
 8/22/23

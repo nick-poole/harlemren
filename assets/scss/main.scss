@@ -9,11 +9,13 @@
     --hue-color: 177;
 
     /* HSL color mode */
-    --first-color: hsl(177, 84%, 29%);
+    --first-color-base: hsl(177, 84%, 29%);
+    --first-color: hsl(177, 82%, 27%);
     --first-color-light: hsl(177, 64%, 43%);
     --first-color-second: hsl(177, 64%, 22%);
     --first-color-alt: hsl(177, 64%, 15%);
     --sec-color: hsl(27, 89%, 58%);
+    --sec-text-color: #ba5b0d;
     --acc-color: hsl(240, 2%, 59%);
     --roy-color: #f0d397;
     --roy-text-color: #e8e6d7;
@@ -112,7 +114,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--sec-color);
+    color: var(--sec-text-color);
 }
 
 img,
@@ -165,7 +167,7 @@ input {
     font-weight: var(--font-semi-bold);
     margin-bottom: var(--mb-1);
     text-align: center;
-    color: var(--sec-color);
+    color: var(--sec-text-color);
 }
 
 .container {
@@ -256,7 +258,7 @@ input {
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 
-    // background-color: var(--first-color);
+    // background-color: ;
     // background-color: transparent;
 }
 
@@ -315,6 +317,7 @@ input {
     &__link {
         font-family: var(--title-font);
         font-weight: var(--font-semi-bold);
+        font-size: var(--h2-font-size);
         text-transform: uppercase;
 
         color: var(--text-color);
@@ -352,7 +355,7 @@ input {
 
 /* Change background header when scrolled*/
 .scroll-header {
-    background-color: var(--first-color);
+    background-color: var(--first-color-base);
     box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 0.1);
 
     transition: 0.2 ease-in-out;
@@ -496,7 +499,7 @@ input {
         position: absolute;
         right: 1rem;
         bottom: 1rem;
-        width: 300px;
+        width: 325px;
 
         color: var(--body-color);
 
@@ -505,6 +508,9 @@ input {
         border-left: 10px solid var(--acc-color);
         border-radius: 10px;
 
+        &__inset {
+            width: 200px;
+        }
         &-title {
             display: block;
             font-family: var(--title-font);
@@ -514,6 +520,15 @@ input {
         }
         &-button {
             font-size: var(--normal-font-size);
+            background-color: var(--roy-black-color);
+            color: var(--roy-text-color);
+            font-weight: var(--font-semi-bold);
+            padding: 0.2rem;
+            border-radius: 3px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
         }
         &-overlay {
             font-size: var(--smaller-font-size);
@@ -544,6 +559,7 @@ input {
     padding: 1rem 2rem;
     font-weight: var(--font-semi-bold);
     color: var(--first-color);
+    color: #0c7d78;
     background-color: var(--body-color);
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
         rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -699,7 +715,7 @@ input {
     }
     &__license {
         font-size: var(--h3-font-size);
-        color: var(--sec-color);
+        color: var(--sec-text-color);
         //margin-bottom: var(--mb-0-25);
     }
     &__content {
@@ -766,14 +782,14 @@ input {
         bottom: 0rem;
         left: 0rem;
         //backdrop-filter: blur(1px);
-        background-color: var(--sec-color);
+        background-color: var(--sec-text-color);
         padding: 0.5rem;
-        border-left: 15px solid var(--first-color);
+        border-left: 15px solid var(--acc-color);
     }
     &__title {
-        color: var(--first-color);
-    }
-    &__title {
+        background-color: var(--first-color);
+        color: var(--white-color);
+        margin-left: 0;
         font-size: var(--h3-font-size);
         margin-bottom: var(--mb-0-25);
     }
@@ -837,6 +853,7 @@ input {
         box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
             rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
+        border-bottom: 10px solid var(--first-color);
         border-left: 10px solid var(--acc-color);
 
         border-radius: 10px;
@@ -859,7 +876,7 @@ input {
     }
 
     &__exp {
-        background-color: var(--sec-color);
+        background-color: var(--sec-text-color);
         border-bottom: 10px solid var(--acc-color);
         border-left: 10px solid var(--first-color);
 
@@ -886,7 +903,7 @@ input {
                 padding: 10px 0;
 
                 span {
-                    color: var(--sec-color);
+                    color: var(--sec-text-color);
                     font-style: italic;
                     font-weight: bold;
                 }
@@ -911,13 +928,33 @@ input {
 .vip {
     background-color: var(--roy-black-color);
 
+    &__logo {
+        display: block;
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+    }
+
     &__content {
         max-width: 968px;
         margin: 0 auto;
     }
 
+    &__title {
+        border-left: none;
+        font-family: "Raleway";
+        font-size: var(--biggest-font-size);
+        background-color: var(--roy-black-color);
+        color: var(--roy-color);
+    }
+
     &__subtitle {
         color: var(--sec-color);
+    }
+
+    &__description {
+        margin-bottom: var(--mb-2-5);
+        color: var(--roy-text-color);
     }
 }
 
@@ -932,44 +969,22 @@ input {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
-
-    &__description {
-        margin-bottom: var(--mb-2-5);
-    }
-}
-
-#video-file {
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 /*=============== SUBSCRIBE ===============*/
-.vip {
+.subscribe {
     &__bg {
         //background-color: #1f1f1f;
         padding: 2.5rem 0;
-    }
-    &__title {
-        border-left: none;
-        font-family: "Raleway";
-        font-size: var(--biggest-font-size);
-        background-color: var(--roy-black-color);
-        color: var(--roy-color);
     }
 
     &__description {
         color: var(--roy-text-color);
         margin-bottom: 3rem;
-    }
 
-    &__logo {
-        display: block;
-        height: 300px;
-        width: 300px;
-        margin: 0 auto;
+        a {
+            color: var(--sec-color);
+        }
     }
 
     &__disclaimer {
@@ -1040,7 +1055,7 @@ input {
 
     &__tel,
     &__email {
-        color: var(--sec-color);
+        color: var(--sec-text-color);
     }
 
     &__form {
@@ -1148,7 +1163,7 @@ input {
                 z-index: 1;
 
                 color: var(--white-color);
-                background-color: var(--sec-color);
+                background-color: var(--sec-text-color);
                 cursor: pointer;
                 text-align: center;
 
@@ -1684,12 +1699,13 @@ textarea:not(:placeholder-shown) + .fieldset__label {
         &__info {
             left: 2rem;
             bottom: 4rem;
-            width: 328px;
+            width: 430px;
             grid-template-columns: 1fr 2fr;
             column-gap: 2rem;
 
             &-title {
                 font-size: var(--normal-font-size);
+                margin-bottom: 1.5rem;
             }
             &-img {
                 width: 240px;
