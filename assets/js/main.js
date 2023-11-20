@@ -75,7 +75,7 @@ let swiper = new Swiper(".swiper-container", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: false,
-    spaceBetween: 10,
+    spaceBetween: 15,
     coverflowEffect: {
         rotate: 0,
         slideShadows: true,

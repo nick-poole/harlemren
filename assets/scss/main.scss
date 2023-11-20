@@ -200,12 +200,13 @@ input {
     line-height: 1.6;
 }
 
-.f-par {
-    text-indent: 30px;
-}
-
 .par-list {
     margin: 1rem 1rem 2rem 3rem;
+    line-height: 2;
+
+    li {
+        list-style-type: circle;
+    }
 }
 
 .blockquote {
@@ -895,21 +896,45 @@ input {
 }
 /*=============== APPOINTMENTS ===============*/
 .appointment {
-    &__description {
-        ul {
-            list-style-type: circle;
+    &__container {
+        &__description {
+            ul {
+                list-style-type: circle;
 
-            li {
-                padding: 10px 0;
+                li {
+                    padding: 10px 0;
 
-                span {
-                    color: var(--sec-text-color);
-                    font-style: italic;
-                    font-weight: bold;
+                    span {
+                        color: var(--sec-text-color);
+                        font-style: italic;
+                        font-weight: bold;
+                    }
                 }
             }
         }
+
+        .appointment__button {
+            color: red;
+            margin-bottom: 100px;
+        }
     }
+
+    // .button {
+    //     display: block;
+    //     margin: 0 auto;
+    //     color: red;
+    // }
+}
+
+a#apt-button.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: auto;
+    max-width: 400px;
+
+    margin: 2rem auto 1rem auto;
 }
 
 .acuity {

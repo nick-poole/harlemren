@@ -4,7 +4,7 @@
 
 ## [The New Harlem Renaissance Website](https://thenewharlemrenaissance.com)
 
-### HTML / CSS / JavaScript
+### HTML / SASS / JavaScript
 
 ---
 
@@ -27,7 +27,7 @@
 - [Color Palette](#color-palette)
 - [SwiperJS](#swiperjs-integration)
 - [RemixIcons](#remixicons)
-- [Acuity](#acuity)
+- [Booksy](#booksy)
 - [Formspree Integration](#formspree-integration)
 - [Commit Log](#commit-log)
 - [Action Items](#action-items)
@@ -74,7 +74,7 @@ The toggling functionality for the navigation menu is implemented in JavaScript.
 
 ## Sass Setup
 
-The project uses Sass for more efficient styling. Edit the `assets/scss/main.scss` file for style changes. The Live Sass Compiler extension in Visual Studio Code compiles this to `assets/css/main.css` automatically upon save.
+The project uses Sass for more efficient styling. Edit the `assets/scss/main.scss` file for style changes. The Live Sass Compiler extension in Visual Studio Code compiles this to `/dist/css/main.output.css` automatically upon save.
 
 ## SwiperJS Integration
 
@@ -107,9 +107,9 @@ The website incorporates RemixIcons for its extensive collection of icons. The i
 
 For more information on using RemixIcons and exploring available icons, visit the [Remixicon github](https://github.com/Remix-Design/RemixIcon) and/or the [Remixicon Website](https://remixicon.com/).
 
-### Acuity
+### Booksy
 
-The website uses Acuity for easy appointment scheduling. Users can conveniently book grooming services through Acuity.
+The website uses Booksy for easy appointment scheduling. Users can conveniently book grooming services through Booksy.
 
 ### Formspree Integration
 
@@ -121,11 +121,15 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+11/20/23
+
+- FEAT(main): Remove Acuity integration and replace with Booksy
+
 8/24/23
 
 - FEAT(a11y): Resolved a11y issues including contrast, alt-text, and structural elements.
 
-- FEAT(main): Initial a11y changes adressing empty links and jsutified content.
+- FEAT(main): Initial a11y changes addressing empty links and justified content.
 
 8/22/23
 
