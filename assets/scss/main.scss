@@ -87,17 +87,23 @@
 
 html {
     scroll-behavior: smooth;
+    width: 100vw;
 }
 
 body {
     margin: var(--header-height) 0 0 0;
-    width: 100%;
+    width: 100vw;
     min-width: 310px;
     overflow-x: hidden;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
+}
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important;
 }
 
 h1,
@@ -139,6 +145,7 @@ input {
 }
 
 // .main {
+//     width: 100%;
 // }
 
 /*=============== REUSABLES ===============*/
@@ -252,7 +259,7 @@ input {
 
 /*=============== HEADER ===============*/
 .header {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -692,17 +699,21 @@ input {
 
 /*============ MEET THE OWNER ============*/
 .mto {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
+    // margin-left: var(--mb-1);
+    // margin-right: var(--mb-1);
 
     padding-top: 0;
 
     &__img {
         display: block;
-        width: 100%;
+        width: 100vw;
         max-width: 994px;
         height: auto;
         margin: 0 auto;
+    }
+
+    &__container {
+        overflow: hidden;
     }
     &__plate {
         flex-direction: column;
@@ -749,6 +760,29 @@ input {
     &__description {
         width: 100%;
         max-width: 100%;
+    }
+}
+/*=============== MEDIA ===============*/
+.media {
+    &__container {
+        width: 100vw;
+        height: 100%;
+
+        overflow: hidden;
+
+        // &__embed {
+        // }
+        iframe {
+            display: block;
+            margin: 0 auto;
+            height: 400px;
+            max-height: 475px;
+            width: 100%;
+            max-width: 768px;
+        }
+        &-description {
+            margin: 1rem 0 0 3rem;
+        }
     }
 }
 
@@ -1527,6 +1561,13 @@ textarea:not(:placeholder-shown) + .fieldset__label {
             font-size: var(--normal-font-size);
         }
     }
+
+    // .media {
+    //     &__container {
+    //         width: auto;
+    //         height: auto;
+    //     }
+    // }
 
     .menu {
         &__container {
