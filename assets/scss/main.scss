@@ -780,12 +780,9 @@ input {
             max-width: 768px;
         }
         &-description {
-            margin: 1rem 0 0 1rem;
+            margin: 2rem 0 0 1rem;
+            text-align: center;
         }
-    }
-
-    &__link-external {
-        margin: 1rem 0 0 1rem;
     }
 }
 
