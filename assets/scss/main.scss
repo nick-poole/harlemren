@@ -103,7 +103,6 @@ body {
 html,
 body {
     width: auto !important;
-    overflow-x: hidden !important;
 }
 
 h1,
@@ -781,8 +780,12 @@ input {
             max-width: 768px;
         }
         &-description {
-            margin: 1rem 0 0 3rem;
+            margin: 1rem 0 0 1rem;
         }
+    }
+
+    &__link-external {
+        margin: 1rem 0 0 1rem;
     }
 }
 
