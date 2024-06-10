@@ -644,6 +644,7 @@ input {
 
 /*=============== ABOUT ===============*/
 .about {
+    margin-bottom: 10rem;
     &__data {
         text-align: center;
     }
@@ -928,6 +929,13 @@ input {
         }
     }
 }
+.font-mini {
+    font-size: var(--smaller-font-size);
+}
+#experienceMenu {
+    margin-bottom: 5rem;
+}
+
 /*=============== APPOINTMENTS ===============*/
 .appointment {
     &__container {

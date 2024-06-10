@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+06/09/24
+
+- FEAT(main): Update Menu Items per client request
+
 11/20/23
 
 - FEAT(main): Remove Acuity integration and replace with Booksy
