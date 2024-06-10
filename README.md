@@ -123,6 +123,8 @@ Formspree handles submissions from the Contact Form.
 
 06/09/24
 
+- FEAT(main): Adds OpenGraph and Twitter Cards head
+
 - FEAT(main): Update Menu Items per client request
 
 11/20/23
