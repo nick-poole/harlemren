@@ -215,6 +215,19 @@ input {
     }
 }
 
+// .section p a,
+// .section ul li a {
+//     text-decoration: underline;
+//     transition: 0.3s ease-in;
+//     -webkit-transition: 0.3s ease-in;
+//     -moz-transition: 0.3s ease-in;
+//     -ms-transition: 0.3s ease-in;
+//     -o-transition: 0.3s ease-in;
+//     :hover {
+//         text-decoration: none;
+//     }
+// }
+
 .blockquote {
     width: 80%;
     margin: 0 auto;
@@ -644,7 +657,7 @@ input {
 
 /*=============== ABOUT ===============*/
 .about {
-    margin-bottom: 10rem;
+    // margin-bottom: 10rem;
     &__data {
         text-align: center;
     }
@@ -767,22 +780,58 @@ input {
     &__container {
         width: 100vw;
         height: 100%;
-
+        margin-bottom: 1rem;
         overflow: hidden;
 
-        // &__embed {
-        // }
         iframe {
             display: block;
-            margin: 0 auto;
+            margin: 0 auto 1rem auto;
             height: 400px;
             max-height: 475px;
             width: 100%;
             max-width: 768px;
         }
-        &-description {
-            margin: 2rem 0 0 1rem;
+    }
+    &__subtext {
+        width: 80%;
+        margin: 0 auto 1rem auto;
+        p {
             text-align: center;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+    }
+}
+
+#media .section {
+    margin-bottom: 0;
+}
+.book {
+    .section__subtitle {
+        margin-bottom: 1.5rem;
+    }
+    &__display {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    &__cover {
+        margin: 0 auto 1rem auto;
+        img {
+            height: 375px;
+            width: 275px;
+        }
+    }
+    &__order {
+        width: 80%;
+        margin: 0 auto;
+
+        .button__container {
+            display: flex;
+            justify-content: center;
+        }
+        &-button {
+            margin: 1rem auto 0 auto;
         }
     }
 }
@@ -880,6 +929,7 @@ input {
     &__title {
         margin-top: 5rem;
     }
+
     &__list {
         max-width: 400px;
         margin: 2rem 0;
@@ -912,9 +962,10 @@ input {
     }
 
     &__exp {
-        background-color: var(--sec-text-color);
+        background-color: var(--first-color);
+
+        border-left: 10px solid var(--sec-color);
         border-bottom: 10px solid var(--acc-color);
-        border-left: 10px solid var(--first-color);
 
         .menu {
             &-item,
@@ -926,6 +977,15 @@ input {
             &-price {
                 text-align: right;
             }
+        }
+    }
+    &__download {
+        display: flex;
+        justify-content: center;
+        .button {
+            margin: 1rem auto 2rem auto;
+            display: block;
+            padding: 1rem 2rem;
         }
     }
 }
@@ -1665,6 +1725,33 @@ textarea:not(:placeholder-shown) + .fieldset__label {
         }
     }
 
+    .book {
+        &__display {
+            width: 80%;
+            margin: 0 auto;
+            flex-direction: row;
+        }
+        &__cover {
+            height: 100%;
+            // width: 50%;
+            img {
+                display: block;
+                margin: 0 auto;
+                height: auto;
+                width: auto;
+            }
+        }
+        &__order {
+            width: 50%;
+            &-par {
+                margin: 2rem;
+                padding-top: 2rem;
+            }
+            &-button {
+                margin: 2rem auto;
+            }
+        }
+    }
     .service {
         &__container {
             //width: 100%;
