@@ -818,8 +818,8 @@ input {
     &__cover {
         margin: 0 auto 1rem auto;
         img {
-            height: 375px;
-            width: 275px;
+            height: auto;
+            width: auto;
         }
     }
     &__order {
