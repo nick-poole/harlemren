@@ -121,6 +121,14 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+04/15/25
+
+- FIX(main): Minor URL fixes. add <www>. to select URLs and restore URI pathing
+
+01/06/25
+
+- Update footer copy for new year
+
 06/09/24
 
 - FEAT(main): Adds OpenGraph and Twitter Cards head
