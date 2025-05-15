@@ -121,9 +121,13 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+05/15/25
+
+- feat:Added AUSOME CUTS landing page; updated Open Graph meta tags and sitemap.xml to include new page
+
 04/15/25
 
-- FIX(main): Minor URL fixes. add <www>. to select URLs and restore URI pathing
+- FIX(main): Minor URL fixes. add www to select URLs and restore URI pathing
 
 01/06/25
 
