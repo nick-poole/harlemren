@@ -121,6 +121,10 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
+10/1/25
+
+- feat Updates info@ausomecuts(dot)org email address
+
 05/15/25
 
 - feat:Added AUSOME CUTS landing page; updated Open Graph meta tags and sitemap.xml to include new page
