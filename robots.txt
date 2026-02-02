@@ -3,4 +3,4 @@ Disallow: /private/
 Disallow: /restricted/
 Disallow: /temp/
 Disallow: /hidden/
-Sitemap: http://www.newharlemrenaissance.com/sitemap.xml
+Sitemap: https://www.newharlemrenaissance.com/sitemap.xml

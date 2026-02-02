@@ -39,7 +39,7 @@ function scrollHeaderAndCheckVip() {
     const navLogo = document.getElementById("navLogo");
 
     // If the scroll is greater than 100 viewport height
-    if (this.scrollY >= 80) {
+    if (window.scrollY >= 80) {
         // Add the scroll-header class to the header tag
         header.classList.add("scroll-header");
 
@@ -53,22 +53,25 @@ function scrollHeaderAndCheckVip() {
     }
 
     // Get the position of the vipSection
-    let bounds = vipSection.getBoundingClientRect();
+    if (vipSection) {
+        let bounds = vipSection.getBoundingClientRect();
 
-    // If scroll is past the vipSection
-    if (bounds.top <= 200 && bounds.bottom > 50) {
-        header.classList.add("past-vip-section");
+        // If scroll is past the vipSection
+        if (bounds.top <= 200 && bounds.bottom > 50) {
+            header.classList.add("past-vip-section");
 
-        // Update for royalty logo
-        navLogo.src = "assets/images/logos/8.webp";
-    } else {
-        header.classList.remove("past-vip-section");
+            // Update for royalty logo
+            navLogo.src = "assets/images/logos/8.webp";
+        } else {
+            header.classList.remove("past-vip-section");
+        }
     }
 }
 
 window.addEventListener("scroll", scrollHeaderAndCheckVip);
 
 /*============ SWIPER SERVICES ============*/
+if (document.querySelector(".swiper-container")) {
 let swiper = new Swiper(".swiper-container", {
     effect: "coverflow",
     grabCursor: true,
@@ -89,6 +92,7 @@ let swiper = new Swiper(".swiper-container", {
         hide: true,
     },
 });
+}
 
 /*============ SHOW SCROLL UP ============*/
 const headerHeight = document.getElementById("header").offsetHeight;
@@ -96,7 +100,7 @@ const headerHeight = document.getElementById("header").offsetHeight;
 function scrollUp() {
     const scrollUp = document.getElementById("scroll-up");
     // When the scroll is higher than 200 viewport height
-    if (this.scrollY >= 200 + headerHeight)
+    if (window.scrollY >= 200 + headerHeight)
         //add the show-scroll class to the a tag
         scrollUp.classList.add("show-scroll");
     // else remove
@@ -118,12 +122,14 @@ links.forEach((link) => {
         //section corresponding to the link
         const section = document.getElementById(id);
 
-        // Scroll to section (minus the height of the header)
-        window.scroll({
-            //(--header-height: 4.5rem)
-            top: section.offsetTop - headerHeight,
-            behavior: "smooth",
-        });
+        if (section) {
+            // Scroll to section (minus the height of the header)
+            window.scroll({
+                //(--header-height: 4.5rem)
+                top: section.offsetTop - headerHeight,
+                behavior: "smooth",
+            });
+        }
     });
 });
 
@@ -163,31 +169,38 @@ window.onload = function () {
 /* ========== CTA FORM VALIDATION ========== */
 //Get the form/inputs/submit
 const form = document.getElementById("fs-frm");
-const inputs = form.querySelectorAll("input, select, textarea");
-const submitButton = document.getElementById("submit");
 
-//Check validity
-function checkFormValidity() {
-    let isFormValid = true;
+if (form) {
+    const inputs = form.querySelectorAll("input, select, textarea");
+    const submitButton = document.getElementById("submit");
 
-    // Loop through each input and check its validity
-    inputs.forEach((input) => {
-        if (!input.checkValidity()) {
-            isFormValid = false;
+    //Check validity
+    function checkFormValidity() {
+        let isFormValid = true;
+
+        // Loop through each input and check its validity
+        inputs.forEach((input) => {
+            if (!input.checkValidity()) {
+                isFormValid = false;
+            }
+        });
+
+        // Enable or disable the submit button based on form validity
+        if (isFormValid) {
+            submitButton.removeAttribute("disabled");
+        } else {
+            submitButton.setAttribute("disabled", "true");
         }
-    });
-
-    // Enable or disable the submit button based on form validity
-    if (isFormValid) {
-        submitButton.removeAttribute("disabled");
-    } else {
-        submitButton.setAttribute("disabled", "true");
     }
+
+    // Attach event listeners to input elements
+    inputs.forEach((input) => {
+        input.addEventListener("input", checkFormValidity);
+    });
 }
 
-// Attach event listeners to input elements
-inputs.forEach((input) => {
-    input.addEventListener("input", checkFormValidity);
-});
-
-/*==========  SCROLL REVEAL ANIMATION ========== */
+/*==========  DYNAMIC FOOTER YEAR ========== */
+const footerYear = document.getElementById("footer-year");
+if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+}

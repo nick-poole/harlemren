@@ -17,23 +17,23 @@
 
 		<!--======== Open Graph / Facebook ========-->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://www.newharlemrenaissance.com.com/" />
+		<meta property="og:url" content="https://www.newharlemrenaissance.com/" />
 		<meta property="og:title" content="New Harlem Renaissance - Tradition Meets Trend" />
 		<meta
 			property="og:description"
 			content="Book an appointment today with Master Barber Kennard Perry in Northeast Baltimore (21214) for elite grooming and unmatched expertise." />
-		<meta property="og:image" content="https://www.newharlemrenaissance.com.com/assets/images/k-perry-prof.jpg" />
+		<meta property="og:image" content="https://www.newharlemrenaissance.com/assets/images/k-perry-prof.jpg" />
 
 		<!--=============== Twitter ===============-->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://www.newharlemrenaissance.com.com/" />
+		<meta property="twitter:url" content="https://www.newharlemrenaissance.com/" />
 		<meta property="twitter:title" content="New Harlem Renaissance - Tradition Meets Trend" />
 		<meta
 			property="twitter:description"
 			content="Book an appointment today with Master Barber Kennard Perry in Northeast Baltimore (21214) for elite grooming and unmatched expertise." />
 		<meta
 			property="twitter:image"
-			content="https://www.newharlemrenaissance.com.com/assets/images/k-perry-prof.jpg" />
+			content="https://www.newharlemrenaissance.com/assets/images/k-perry-prof.jpg" />
 
 		<!--=============== FAVICON ===============-->
 		<link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-touch-icon.png" />
@@ -45,7 +45,8 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<!--=============== REMIXICONS ===============-->
-		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<noscript><link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" /></noscript>
 
 		<!--=============== SWIPER CSS ===============-->
 		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
@@ -55,6 +56,8 @@
 	</head>
 
 	<body>
+		<a href="#main-content" class="visually-hidden">Skip to main content</a>
+
 		<!--========== HEADER ==========-->
 		<header class="header" id="header">
 			<!--========== NAV ==========-->
@@ -72,9 +75,6 @@
 						<li class="nav__item">
 							<a href="#about" class="nav__link">About</a>
 						</li>
-						<!-- <li class="nav__item">
-							<a href="#mto" class="nav__link">Behind The Chair</a>
-						</li> -->
 
 						<li class="nav__item">
 							<a href="#services" class="nav__link">Services</a>
@@ -95,16 +95,22 @@
 						</li>
 					</ul>
 
-					<i class="ri-close-line nav__close" id="nav-close"></i>
+					<button class="nav__close" id="nav-close" aria-label="Close navigation menu">
+						<i class="ri-close-line"></i>
+					</button>
 				</div>
 
-				<div class="nav__toggle" id="nav-toggle">
+				<button class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu">
 					<i class="ri-function-line"></i>
-				</div>
+				</button>
 			</nav>
 		</header>
 
-		<main class="main">
+		<noscript>
+			<style>.nav__menu { position: static !important; right: auto !important; width: auto !important; height: auto !important; box-shadow: none !important; padding: 0 !important; } .nav__toggle, .nav__close { display: none !important; } .nav__list { flex-direction: row !important; flex-wrap: wrap !important; gap: 1rem !important; }</style>
+		</noscript>
+
+		<main class="main" id="main-content">
 			<!--==================== HOME ====================-->
 			<section
 				class="home"
@@ -121,7 +127,6 @@
 
 				<div class="home__container grid">
 					<div class="home__data">
-						<!-- <span class="home__data-subtitle">A <b>Cut</b> above the rest</span> -->
 						<h1 class="home__data-title">
 							<b>Reimagine</b>
 							<br />
@@ -188,7 +193,8 @@
 						</div>
 						<div class="home__info-overlay">
 							<img
-								src="assets/images/gustavo-fring.jpg"
+								src="assets/images/gustavo-fring.webp"
+								loading="lazy"
 								alt="Client reclining in barber chair with a contented grin, illuminated by soft light."
 								class="home__info-img" />
 						</div>
@@ -214,7 +220,8 @@
 				</div>
 
 				<img
-					src="assets/images/teenie_harris-carnegie.jpg"
+					src="assets/images/teenie_harris-carnegie.webp"
+					loading="lazy"
 					alt="Barbers at Gator’s shop, 1950. By Charles 'Teenie' Harris, Carnegie Museum of Art."
 					class="about__img-zero" />
 			</section>
@@ -256,13 +263,15 @@
 					<div class="about__img">
 						<div class="about__img-overlay">
 							<img
-								src="assets/images/andre-benz.jpg"
+								src="assets/images/andre-benz.webp"
+								loading="lazy"
 								alt="NYC Subway Red Line train at an underground station. Photo by Andre Benz"
 								class="about__img-one" />
 						</div>
 						<div class="about__img-overlay">
 							<img
-								src="assets/images/hair-spies.jpg"
+								src="assets/images/hair-spies.webp"
+								loading="lazy"
 								alt="Barber's workstation with an array of clippers, grooming tools, and combs."
 								class="about__img-two" />
 						</div>
@@ -275,7 +284,8 @@
 				<h2 class="section__title">Behind The Chair</h2>
 				<h3 class="section__subtitle">Meet Your Style Expert</h3>
 				<img
-					src="assets/images/k-perry-prof.jpg"
+					src="assets/images/k-perry-prof.webp"
+					loading="lazy"
 					alt="Kennard Perry, Barber and founder of New Harlem Renaissance."
 					class="mto__img" />
 
@@ -312,7 +322,7 @@
 						Science and Government in 1997, but it was his passion for barbering that led him to create
 						something truly unique. He currently manages the
 						<a
-							href="http://www.nilestylebarbershop.com/"
+							href="https://www.nilestylebarbershop.com/"
 							target="_blank"
 							rel="noopener"
 							class="content-link">
@@ -354,8 +364,7 @@
 							<iframe
 								src="https://www.youtube.com/embed/VnlXa9x7Xqo?si=ycIYVaJdPG1ih9hX"
 								title="The Vaccine, In Our Words"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								referrerpolicy="strict-origin-when-cross-origin"
 								allowfullscreen
 								color="white"></iframe>
@@ -387,7 +396,7 @@
 				<h3 class="section__subtitle">Available Now</h3>
 				<div class="book__display container">
 					<div class="book__cover">
-						<img src="https://m.media-amazon.com/images/I/71mulIt0WZL._SY466_.jpg" alt="Book cover" />
+						<img src="https://m.media-amazon.com/images/I/71mulIt0WZL._SY466_.jpg" alt="Book cover" loading="lazy" />
 					</div>
 					<div class="book__order">
 						<p class="par">
@@ -422,7 +431,8 @@
 				<h2 class="section__title">Services</h2>
 				<h3 class="section__subtitle">Reviving the Art of Grooming</h3>
 
-				<img src="assets/images/rdne-stock-project-7697221.jpg" alt="" class="service__header-img" />
+				<img src="assets/images/rdne-stock-project-7697221.webp"
+					loading="lazy" alt="Barber grooming a client in a professional setting" class="service__header-img" />
 
 				<div class="service__container container">
 					<p class="service__section-description par">
@@ -601,8 +611,9 @@
 							<!--==================== SERVICE 1 ====================-->
 							<div class="service__card swiper-slide">
 								<img
-									src="assets/images/budgeron-bach_classic-harlem.jpg"
-									alt=""
+									src="assets/images/budgeron-bach_classic-harlem.webp"
+									loading="lazy"
+									alt="Man receiving a classic haircut in a barbershop"
 									class="service__img si-1" />
 								<div class="service__data">
 									<h2 class="service__title">The Classic</h2>
@@ -615,7 +626,8 @@
 
 							<!--==================== SERVICE 2 ====================-->
 							<div class="service__card swiper-slide" id="theRenMan">
-								<img src="assets/images/august-de-richelieu.jpg" alt="" class="service__img si-4" />
+								<img src="assets/images/august-de-richelieu.webp"
+								loading="lazy" alt="Well-groomed man embodying the Renaissance Man style" class="service__img si-4" />
 								<div class="service__data">
 									<h2 class="service__title">The Renaissance Man</h2>
 									<span class="service__description">
@@ -628,7 +640,8 @@
 
 							<!--==================== SERVICE 3 ====================-->
 							<div class="service__card swiper-slide" id="theSCS">
-								<img src="assets/images/scc_collis-3031391.jpg" alt="" class="service__img si-5" />
+								<img src="assets/images/scc_collis-3031391.webp"
+								loading="lazy" alt="Man relaxing during a premium self-care grooming session" class="service__img si-5" />
 								<div class="service__data">
 									<h2 class="service__title">The Self Care Sanctuary</h2>
 									<span class="service__description">
@@ -652,10 +665,6 @@
 					<h2 class="section__title">Appointments</h2>
 					<h3 class="section__subtitle">Seamless Booking for Impeccable Grooming</h3>
 
-					<!-- <a href="https://booksy.com/en-us/dl/show-business/1071857" target="_blank" class="button" id="apt-button"
-            aria-label="Book an Appointment with Kennard on Booksy">
-            Book Now
-          </a> -->
 					<div class="appointment__description">
 						<p class="par">
 							Embark on your grooming journey with The New Harlem Renaissance. The online booking system
@@ -725,7 +734,7 @@
 				<h3 class="section__subtitle vip__subtitle">Journey into the Splendor of Self-Care</h3>
 
 				<div class="vip__content">
-					<img src="assets/images/logos/royalty_club.png" alt="" class="vip__logo" />
+					<img src="assets/images/logos/royalty_club.png" loading="lazy" alt="Renaissance Royalty Club logo" class="vip__logo" />
 
 					<p class="vip__description par">
 						The Renaissance Royalty Club is an exclusive membership offering that transcends typical
@@ -739,7 +748,7 @@
 
 					<div class="video__container container">
 						<div class="video__content">
-							<img src="assets/images/roy_card.png" alt="" class="vip__card-img" />
+							<img src="assets/images/roy_card.png" loading="lazy" alt="Renaissance Royalty Club membership card" class="vip__card-img" />
 						</div>
 					</div>
 
@@ -772,33 +781,33 @@
 				<h2 class="section__title visually-hidden">Affiliate Brands &amp; Brands</h2>
 				<div class="affiliates__container grid">
 					<div class="affiliates__content">
-						<img src="assets/images/logos/tnhr.jpg" alt="" class="affiliates__img" />
+						<img src="assets/images/logos/tnhr.jpg" alt="The New Harlem Renaissance logo" class="affiliates__img" />
 					</div>
 
 					<div class="affiliates__content">
-						<img src="assets/images/logos/blvk_long-white.png" alt="" class="affiliates__img" />
+						<img src="assets/images/logos/blvk_long-white.png" alt="BLVK logo" class="affiliates__img" />
 					</div>
 
 					<div class="affiliates__content">
-						<img src="assets/images/logos/nylestyle_bg-rmv.png" alt="" class="affiliates__img" />
+						<img src="assets/images/logos/nylestyle_bg-rmv.png" alt="Nile Style Barbershop logo" class="affiliates__img" />
 					</div>
 
 					<div class="affiliates__content">
-						<img src="assets/images/logos/royalty__club-white.png" alt="" class="affiliates__img" />
+						<img src="assets/images/logos/royalty__club-white.png" alt="Royalty Club logo" class="affiliates__img" />
 					</div>
 				</div>
 			</div>
 
 			<div class="contact__banner">
-				<img src="assets/images/the-new-york-public-library-stoop.jpg" alt="" class="contact__banner-img" />
+				<img src="assets/images/the-new-york-public-library-stoop.webp"
+					loading="lazy" alt="Historic Harlem brownstone stoop" class="contact__banner-img" />
 			</div>
 
 			<!--==================== CONTACT ====================-->
 			<section class="contact section" id="cta">
 				<h2 class="section__title">Contact</h2>
 				<div class="contact__container container grid">
-					<!-- <img src="assets/images/agustin-fernandez.jpg" alt="" class="contact__img"> -->
-
+	
 					<div class="contact__content grid">
 						<p class="contact__description par">
 							Kennard is the dedicated professional behind The New Harlem Renaissance and he values your
@@ -849,7 +858,8 @@
 											id="name"
 											placeholder=" "
 											type="text"
-											title="Government names only, please" />
+											title="Government names only, please"
+											required />
 										<label for="name" class="fieldset__label">Name</label>
 									</div>
 
@@ -993,11 +1003,8 @@
 						<h3 class="footer__subtitle">Affiliates</h3>
 
 						<ul>
-							<!-- <li class="footer__item">
-                <a href="#" class="footer__link">BLVK</a>
-              </li> -->
 							<li class="footer__item">
-								<a href="http://www.nilestylebarbershop.com/" class="footer__link">
+								<a href="https://www.nilestylebarbershop.com/" class="footer__link">
 									Nile Style Barbershop
 								</a>
 							</li>
@@ -1022,9 +1029,6 @@
 							<li class="footer__item">
 								<a href="legal/privacy-policy.html" class="footer__link">Privacy Policy</a>
 							</li>
-							<!-- <li class="footer__item">
-                <a href="#" class="footer__link">Accessibilty</a>
-              </li> -->
 							<li class="footer__item">
 								<a href="sitemap.xml" class="footer__link">SiteMap</a>
 							</li>
@@ -1033,7 +1037,7 @@
 				</div>
 
 				<div class="footer__rights">
-					<p class="footer__copy">&copy; 2025 The New Harlem Renaissance, LLC. All rights reserved.</p>
+					<p class="footer__copy">&copy; <span id="footer-year"></span> The New Harlem Renaissance, LLC. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>
@@ -1042,9 +1046,6 @@
 		<a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to the top of the page">
 			<i class="ri-arrow-up-circle-line scrollup__icon"></i>
 		</a>
-
-		<!--=============== SCROLL REVEAL===============-->
-		<!-- <script src="assets/js/scrollreveal.min.js"></script> -->
 
 		<!--=============== SWIPER JS ===============-->
 		<script src="assets/js/swiper-bundle.min.js"></script>

@@ -13,7 +13,7 @@
 - JavaScript
 - SwiperJS
 - RemixIcons
-- Acuity Scheduling
+- Booksy
 - Formspree
 
 ## Table of Contents
@@ -30,14 +30,13 @@
 - [Booksy](#booksy)
 - [Formspree Integration](#formspree-integration)
 - [Commit Log](#commit-log)
-- [Action Items](#action-items)
 
 ---
 
 ### Features
 
 - Barber's brand website encompassing the spirit of the original Harlem Renaissance.
-- Offers grooming with precision and utilizes Acuity for easy scheduling.
+- Offers grooming with precision and utilizes Booksy for easy scheduling.
 - Crafted with HTML, CSS, JS, SwiperJS, and RemixIcons.
 - **Interactive Navigation Menu**: The site includes a responsive mobile navigation menu with open/close toggles, implemented using JavaScript. Clicking a navigation link also automatically closes the menu, enhancing usability, particularly for single-page navigation.
 - **Scroll-Up Button**: A dynamic scroll up button allowing for quick and easy navigation back to the top of the page.
@@ -46,7 +45,7 @@
 
 ### About
 
-The New Harlem Renaissance is a captivating website celebrating the essence of the original Harlem Renaissance. It offers exceptional grooming with precision, and allows easy scheduling through Acuity. The website is expertly crafted with HTML, SASS, JS, SwiperJS, and RemixIcons, delivering a seamless and visually engaging user experience.
+The New Harlem Renaissance is a captivating website celebrating the essence of the original Harlem Renaissance. It offers exceptional grooming with precision, and allows easy scheduling through Booksy. The website is expertly crafted with HTML, SASS, JS, SwiperJS, and RemixIcons, delivering a seamless and visually engaging user experience.
 
 ### Contributing
 
@@ -121,177 +120,160 @@ Formspree handles submissions from the Contact Form.
 
 ## Commit Log
 
-10/1/25
+02/02/26
 
-- feat Updates info@ausomecuts(dot)org email address
+- fix: resolve all critical and high audit issues
+- chore: remove AUDIT.md from repo
+- audit: comprehensive codebase review covering bugs, SEO, a11y, UX, and code quality
+
+10/01/25
+
+- refactor: updates info@ausomecuts(dot)org email address
 
 05/15/25
 
-- feat:Added AUSOME CUTS landing page; updated Open Graph meta tags and sitemap.xml to include new page
+- compress ausome images into webps
+- feat: Added AUSOME CUTS landing page; updated Open Graph meta tags and sitemap.xml to include new page
 
 04/15/25
 
-- FIX(main): Minor URL fixes. add www to select URLs and restore URI pathing
+- Fix(main): Minor URL path fixes
 
 01/06/25
 
-- Update footer copy for new year
+- Update footer date to 2025
+
+07/24/24
+
+- FEAT: Add Book section & PDF Menu pricelist functionality
+- Upload menu pdf
 
 06/09/24
 
-- FEAT(main): Adds OpenGraph and Twitter Cards head
-
+- FEAT(main): Add OpenGraph and Twitter Cards head
 - FEAT(main): Update Menu Items per client request
+- Updated Experience section descriptions per client
+
+05/08/24
+
+- Update service description per client request
+
+05/07/24
+
+- COMMENT OUT Menu Prices
+- REMOVE wba logo
+- ADD MEDIA section
 
 11/20/23
 
 - FEAT(main): Remove Acuity integration and replace with Booksy
 
-8/24/23
+08/24/23
 
-- FEAT(a11y): Resolved a11y issues including contrast, alt-text, and structural elements.
+- FEAT(a11y): Resolved a11y issues including contrast, alt-text, and structural elements
+- FEAT(main): Initial a11y changes addressing empty links and justified content
 
-- FEAT(main): Initial a11y changes addressing empty links and justified content.
-
-8/22/23
+08/22/23
 
 - FEAT(headernav): Removed home nav__link and resized nav__menu
-
 - FEAT(headernav): Update nav__logo for all scroll states & reposition nav__close for close/open position consistency
-
-8/16/23
-
-- FEAT(cta): Update acuity & formspree links with client accounts
-
-- FEAT(main): Create and link robots(dot)txt and sitemap(dot)xml
-
 - FEAT(seo): Initial SEO meta tag structuring
 
-8/11/23
+08/16/23
 
-- FIX(w3c): Resolve 100vw margin-right issue. Remove select unicode characters from CTA form & handle w3c initial w3c validation
+- FEAT(cta): Update acuity & formspree links with client accounts
+- FEAT(main): Create and link robots(dot)txt and sitemap(dot)xml
+- FEAT(seo): Initial SEO meta tag structuring
 
-8/10/23
+08/11/23
+
+- FIX(w3c): Resolve 100vw margin-right issue. Remove select unicode characters from CTA form & handle initial w3c validation
+
+08/10/23
 
 - FEAT(cta): Revamp and Enhance Contact Form Functionality
 
-  1. **Fixed Float Label Issue**Fixed the float labels for all input fields, ensuring a smooth transition and improved UI experience for users.
-  2. **Select Dropdown Arrow Removal**: the default dropdown arrows in the select input were replaced with custom Unicode arrows. This brings a consistent look across all browsers. Implemented JavaScript to dynamically hide the custom Unicode arrows once a selection is made, enhancing the UI.
-  3. **CTA Form Validation with JavaScript**: Integrated JavaScript for real-time form validation. The submit button is now disabled by default and only activates when the input fields meet specified criteria, providing an immediate feedback mechanism to the user. Incorporated regex patterns to validate the phone number input field, ensuring entries match the desired formats (e.g., `(123) 456-7890`, `+1 (123) 456-7890`, `123-456-7890`).
+08/08/23
 
-8/8/23
+- FIX(headernav): Resolve active links issue so the 'Behind the chair' nav__link highlights when scrolled past
+- FEAT(mto): Revise mto section title and subtitle per client request
+- FEAT(footer): Integrate footer logo and reformat footer grid with grid areas
+- FEAT(cta): Commit with issues to resolve - form
 
-- FIX(headernav): Resolve active links issue so the 'Behind the chair' nav__link highlights when scrolled past.
-
-- FEAT(mto): Revise mto section title and subtitle per clients request
-
-- FEAT(footer): Integrate footer logo and reformat footer grid with grid areas.
-
-8/7/23
+08/07/23
 
 - FEAT(headernav): Restyle header cta link to a button
+- FEAT(vip): Refit max-width on vip section & restyle video container
+- FEAT(main): Refit home background image into a more responsive design
 
-- FEAT(vip): Refit max-width on vip section & restyle video container.
-
-8/4/23
+08/04/23
 
 - FEAT(headernav): Enhance VIP section and header interaction
+- FEAT(vip): Update VIP section with a new logo and color scheme. Enhanced user navigation experience by adding a scrollbar to the Swiper component
+- FEAT(appointments): Implemented scheduling iframe integration, adjusted iframe width to 100% for responsive design and centered the iframe for a balanced layout
+- FEAT(appointments): Integrated scheduling and Google Maps iframe embed
 
-- FEAT(acuity): Update VIP section with a new logo and color scheme. Enhanced user navigation experience by adding a scrollbar to the Swiper component.
-
-- FEAT(acuity): Implemented Acuity Scheduling iframe integration, adjusted iframe width to 100% for responsive design and centered the iframe for a balanced layout."
-
-8/3/23
-
-- FEAT(acuity): Integrated Acuity test account and Google Maps iframe embed.
+08/03/23
 
 - FEAT(services): Adds pagination and navigation to Swiper and updated their color schemes
-
 - FEAT(mto): Adjust layout for mto section on large screens (768px)
-
 - FEAT(mto): Adjust layout for mto section on medium screens (568px)
 
-8/2/23
+08/02/23
 
 - FEAT(about): Adjust layout for the about section to enhance its appearance on screens 768px and above
-
-- FIX(home): Fixes home container layout by adding margin-top"
-
+- FIX(home): Fixes home container layout by adding margin-top
 - FEAT(headernav): Update navigation styling for larger screens (1024px)
+- FEAT(about): Add four images to directory
 
-8/1/23
+08/01/23
 
 - FIX(headernav): Adjust scroll position for section navigation and restyle section titles
-  - Adjusted JavaScript to ensure correct scroll position when navigating to sections via header links
-  - Restored 'scroll to top' functionality on scroll-up button
-  - Introduced a green background for improved visibility and aesthetics
-
 - FIX(home): Returned the Book Now button to home section
-
-- FEAT(media): Restyle base home section & integrate `Overpass` font.
-
+- FEAT(media): Restyle base home section & integrate `Overpass` font
 - FEAT(main): Update nile style logo and revise text as per client's request
-
 - FIX(main): resolved 480px media query scope issue
-
 - FEAT(headernav): Update global button styling
 
-7/31/23
+07/31/23
 
 - FEAT(services): Enhance Menu styling w/ borders and box shadow effects
-
 - FEAT(media): Update Menu price list
-
 - FIX(main): resolves SwiperJS issue caused by service container div repositioning
 
-7/30/23
+07/30/23
 
 - FEAT(media): Enhance responsive design of about and mto sections on 480px screens and below
+- FEAT(media): Preliminary responsive design implementation
 
-- FEAT(media): Preliminary responsive design implementation. Media queries added to handle varying screen sizes. Further refinements to be made for optimal design across devices.
-
-7/29/23
+07/29/23
 
 - FEAT(headernav): Implemented Scroll-Up Button and Active Scroll Section Indicator
+- FEAT(cta): Enhance contact section layout with CSS grid and restyle contact form
 
-- FEAT(cta): Enhance contact section layout with CSS grid and restyle contact form.
-
-7/26/23
+07/26/23
 
 - FEAT(cta): Add and style contact section with Formspree integration
+- FEAT(footer): Add Footer, Terms and Conditions, and Privacy Policy pages
+- FEAT(appointments): Add Appointments section with placeholder; adjust section order
+- FEAT(vip): Create VIP, subscribe, and sponsors sections
 
-- FEAT(footer): Add Footer, Terms and Conditions, and Privacy Policy pages.
-
-- FEAT(acuity): Add Appointments section with Acuity placeholder; adjust section order
-
-- FEAT(vip): Create VIP, subscribe, and sponsors sections. Temporarily comment out formspree form pending client discussion.
-
-7/25/23
+07/25/23
 
 - FEAT(services): Create Services section with SwiperJS carousel and tiered service offerings
-
-- FEAT(mto): Add Meet the Owner section with banner image, blockquote,and experience stats
-
+- FEAT(mto): Add Meet the Owner section with banner image, blockquote, and experience stats
 - FEAT(about): Create 'About' section with imagery and 'Book Now' CTA
 
-7/24/23
+07/24/23
 
 - FEAT(header): Add dynamic class 'scroll-header' to header on scroll
+- FEAT(home): Add home section with background image and product box. Set global styling for website buttons
+- FEAT(headernav): Add mobile navigation with open/close toggles and link interaction
+- MAIN: Project Setup - Setup SASS, Google Fonts, CSS variables, Remixicon CDN
 
-- FEAT(home): Add home section with background image and product box. Set global styling for website buttons.
-
-- FEAT(headernav): Add mobile navigation with open/close toggles and link interaction. Navigation links now close the mobile menu when clicked.
-
-- MAIN: Project Setup - Setup SASS
-  - 1. Integrated Google Fonts for typography
-  - 2. Integrated SASS with CSS variables and organized sections with comments
-  - 3. Updated Remixicon CDN for extensive icons use
-  - 4. Added additional images and videos for future use
-
-7/19/23
+07/19/23
 
 - MAIN: Project Setup, favicon.ico & readme.md
-
 - Initial Commit
 
 ## Action Items
