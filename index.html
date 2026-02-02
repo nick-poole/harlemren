@@ -45,7 +45,8 @@
 		<meta name="theme-color" content="#ffffff" />
 
 		<!--=============== REMIXICONS ===============-->
-		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+		<link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+		<noscript><link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" /></noscript>
 
 		<!--=============== SWIPER CSS ===============-->
 		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
@@ -55,6 +56,8 @@
 	</head>
 
 	<body>
+		<a href="#main-content" class="visually-hidden">Skip to main content</a>
+
 		<!--========== HEADER ==========-->
 		<header class="header" id="header">
 			<!--========== NAV ==========-->
@@ -72,9 +75,6 @@
 						<li class="nav__item">
 							<a href="#about" class="nav__link">About</a>
 						</li>
-						<!-- <li class="nav__item">
-							<a href="#mto" class="nav__link">Behind The Chair</a>
-						</li> -->
 
 						<li class="nav__item">
 							<a href="#services" class="nav__link">Services</a>
@@ -95,16 +95,22 @@
 						</li>
 					</ul>
 
-					<i class="ri-close-line nav__close" id="nav-close"></i>
+					<button class="nav__close" id="nav-close" aria-label="Close navigation menu">
+						<i class="ri-close-line"></i>
+					</button>
 				</div>
 
-				<div class="nav__toggle" id="nav-toggle">
+				<button class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu">
 					<i class="ri-function-line"></i>
-				</div>
+				</button>
 			</nav>
 		</header>
 
-		<main class="main">
+		<noscript>
+			<style>.nav__menu { position: static !important; right: auto !important; width: auto !important; height: auto !important; box-shadow: none !important; padding: 0 !important; } .nav__toggle, .nav__close { display: none !important; } .nav__list { flex-direction: row !important; flex-wrap: wrap !important; gap: 1rem !important; }</style>
+		</noscript>
+
+		<main class="main" id="main-content">
 			<!--==================== HOME ====================-->
 			<section
 				class="home"
@@ -121,7 +127,6 @@
 
 				<div class="home__container grid">
 					<div class="home__data">
-						<!-- <span class="home__data-subtitle">A <b>Cut</b> above the rest</span> -->
 						<h1 class="home__data-title">
 							<b>Reimagine</b>
 							<br />
@@ -317,7 +322,7 @@
 						Science and Government in 1997, but it was his passion for barbering that led him to create
 						something truly unique. He currently manages the
 						<a
-							href="http://www.nilestylebarbershop.com/"
+							href="https://www.nilestylebarbershop.com/"
 							target="_blank"
 							rel="noopener"
 							class="content-link">
@@ -359,8 +364,7 @@
 							<iframe
 								src="https://www.youtube.com/embed/VnlXa9x7Xqo?si=ycIYVaJdPG1ih9hX"
 								title="The Vaccine, In Our Words"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								referrerpolicy="strict-origin-when-cross-origin"
 								allowfullscreen
 								color="white"></iframe>
@@ -661,10 +665,6 @@
 					<h2 class="section__title">Appointments</h2>
 					<h3 class="section__subtitle">Seamless Booking for Impeccable Grooming</h3>
 
-					<!-- <a href="https://booksy.com/en-us/dl/show-business/1071857" target="_blank" class="button" id="apt-button"
-            aria-label="Book an Appointment with Kennard on Booksy">
-            Book Now
-          </a> -->
 					<div class="appointment__description">
 						<p class="par">
 							Embark on your grooming journey with The New Harlem Renaissance. The online booking system
@@ -807,8 +807,7 @@
 			<section class="contact section" id="cta">
 				<h2 class="section__title">Contact</h2>
 				<div class="contact__container container grid">
-					<!-- <img src="assets/images/agustin-fernandez.jpg" alt="" class="contact__img"> -->
-
+	
 					<div class="contact__content grid">
 						<p class="contact__description par">
 							Kennard is the dedicated professional behind The New Harlem Renaissance and he values your
@@ -1004,11 +1003,8 @@
 						<h3 class="footer__subtitle">Affiliates</h3>
 
 						<ul>
-							<!-- <li class="footer__item">
-                <a href="#" class="footer__link">BLVK</a>
-              </li> -->
 							<li class="footer__item">
-								<a href="http://www.nilestylebarbershop.com/" class="footer__link">
+								<a href="https://www.nilestylebarbershop.com/" class="footer__link">
 									Nile Style Barbershop
 								</a>
 							</li>
@@ -1033,9 +1029,6 @@
 							<li class="footer__item">
 								<a href="legal/privacy-policy.html" class="footer__link">Privacy Policy</a>
 							</li>
-							<!-- <li class="footer__item">
-                <a href="#" class="footer__link">Accessibilty</a>
-              </li> -->
 							<li class="footer__item">
 								<a href="sitemap.xml" class="footer__link">SiteMap</a>
 							</li>
@@ -1044,7 +1037,7 @@
 				</div>
 
 				<div class="footer__rights">
-					<p class="footer__copy">&copy; 2025 The New Harlem Renaissance, LLC. All rights reserved.</p>
+					<p class="footer__copy">&copy; <span id="footer-year"></span> The New Harlem Renaissance, LLC. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>
@@ -1053,9 +1046,6 @@
 		<a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to the top of the page">
 			<i class="ri-arrow-up-circle-line scrollup__icon"></i>
 		</a>
-
-		<!--=============== SCROLL REVEAL===============-->
-		<!-- <script src="assets/js/scrollreveal.min.js"></script> -->
 
 		<!--=============== SWIPER JS ===============-->
 		<script src="assets/js/swiper-bundle.min.js"></script>

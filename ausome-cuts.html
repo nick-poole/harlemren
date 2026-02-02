@@ -17,7 +17,7 @@
 			content="AUSOME CUTS brings sensory-friendly haircuts to Baltimore schools, creating a calm and empowering experience for neurodivergent children." />
 		<meta
 			property="og:image"
-			content="https://www.newharlemrenaissance.com/assets/images/ausome-cuts-preview.jpg" />
+			content="https://www.newharlemrenaissance.com/assets/images/ausome/ausome-cuts-logo.jpg" />
 
 		<!--=============== Twitter ===============-->
 		<meta name="twitter:card" content="summary_large_image" />
@@ -28,12 +28,14 @@
 			content="Mobile, school-based haircuts designed for children with autism and sensory needs. Created by Baltimore’s own Kennard Perry." />
 		<meta
 			name="twitter:image"
-			content="https://www.newharlemrenaissance.com/assets/images/ausome-cuts-preview.jpg" />
+			content="https://www.newharlemrenaissance.com/assets/images/ausome/ausome-cuts-logo.jpg" />
 
 		<link rel="stylesheet" href="dist/css/main.output.css" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
 	<body>
+		<a href="#main-content" class="visually-hidden">Skip to main content</a>
+
 		<!--========== HEADER ==========-->
 		<header class="header" id="header">
 			<nav class="nav">
@@ -53,16 +55,22 @@
 						<li class="nav__item"><a href="index.html#vip" class="nav__link rc">Royalty Club</a></li>
 						<li class="nav__item"><a href="index.html#cta" class="button" id="header-cta">Contact</a></li>
 					</ul>
-					<i class="ri-close-line nav__close" id="nav-close"></i>
+					<button class="nav__close" id="nav-close" aria-label="Close navigation menu">
+						<i class="ri-close-line"></i>
+					</button>
 				</div>
-				<div class="nav__toggle" id="nav-toggle">
+				<button class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu">
 					<i class="ri-function-line"></i>
-				</div>
+				</button>
 			</nav>
 		</header>
 
 		<!--========== MAIN ==========-->
-		<main id="ausomeCuts">
+		<noscript>
+			<style>.nav__menu { position: static !important; right: auto !important; width: auto !important; height: auto !important; box-shadow: none !important; padding: 0 !important; } .nav__toggle, .nav__close { display: none !important; } .nav__list { flex-direction: row !important; flex-wrap: wrap !important; gap: 1rem !important; }</style>
+		</noscript>
+
+		<main id="main-content">
 			<h1 class="section__title">AUSOME CUTS</h1>
 			<span class="section__subtitle">The Thairapy Experience for Neurodivergent Children</span>
 			<div class="container">
@@ -143,18 +151,10 @@
 						Optional breathing breaks and social stories prepare and soothe before, during, and after each
 						session.
 					</li>
-					<!-- <li>
-						<strong>Resource Guides:</strong>
-						Simple take‑home tips for parents and educators to reinforce sensory strategies in daily
-						routines.
-					</li> -->
-				</ul>
+					</ul>
 
 				<div class="cta">
-					<!-- Contact -->
 					<h3 class="section__subtitle head-space">Bring AUSOME CUTS to Your School</h3>
-					<p class="par"></p>
-					<!-- <a href="index.html#cta" class="button">Bring AUSOME CUTS to Your School</a> -->
 				</div>
 				<div class="contact__content grid">
 					<p class="contact__description par">
@@ -182,47 +182,6 @@
 				</div>
 			</div>
 		</main>
-
-		<!-- <main id="ausomeCuts">
-    <section class="section">
-      <h1 class="section__title">AUSOME CUTS</h1>
-      <span class="section__subtitle">The Thairapy Experience for Neurodivergent Children</span>
-
-      <div class="container grid">
-        <p class="par">
-          Neurodivergent children, particularly those with autism, often face significant challenges in traditional barbershop environments. These settings can be noisy and chaotic, overwhelming their senses and making haircuts a stressful ordeal. AUSOME CUTS offers a revolutionary solution by bringing a mobile barbershop directly to schools, providing a calm, controlled, and supportive environment tailored to their needs.
-        </p>
-
-        <h3 class="section__subtitle">Why AUSOME CUTS?</h3>
-        <ul class="par-list">
-          <li><strong>Sensory-Friendly Settings:</strong> A soothing atmosphere that minimizes sensory overload for children who are sensitive to loud noises and bustling environments.</li>
-          <li><strong>Specialized Tools:</strong> Weighted barber capes provide a sense of security and reduce anxiety during haircuts.</li>
-          <li><strong>School-Based Convenience:</strong> Operating within the familiarity of their school helps reduce anxiety and creates a more comfortable experience.</li>
-        </ul>
-
-        <h3 class="section__subtitle">Our Services Include:</h3>
-        <ul class="par-list">
-          <li><strong>Customized Haircuts:</strong> Tailored specifically to each child’s comfort and style preferences.</li>
-          <li><strong>Sensory Adaptations:</strong> Each session is adapted to meet the sensory needs of the child.</li>
-          <li><strong>Professional and Caring Staff:</strong> Trained to understand and support the unique needs of neurodivergent children.</li>
-        </ul>
-
-        <h3 class="section__subtitle">Community and Education</h3>
-        <p class="par">
-          AUSOME CUTS is committed not only to providing a necessary service but also to educating and integrating the community about neurodiversity. Each visit is an opportunity to foster understanding and acceptance, promoting an inclusive environment where all children can thrive.
-        </p>
-
-        <h3 class="section__subtitle">Join Us</h3>
-        <p class="par">
-          We currently partner with nine schools and are actively expanding to include more locations. Join us in our mission to make haircuts a pleasant experience for neurodivergent children. Whether you’re a parent, educator, or school administrator, get in touch to bring AUSOME CUTS to your community.
-        </p>
-
-        <div class="cta">
-          <a href="index.html#cta" class="button">Bring AUSOME CUTS to Your School</a>
-        </div>
-      </div>
-    </section>
-  </main> -->
 
 		<!--========== FOOTER ==========-->
 		<footer class="footer section">
@@ -281,7 +240,7 @@
 						<h3 class="footer__subtitle">Affiliates</h3>
 						<ul>
 							<li class="footer__item">
-								<a href="http://www.nilestylebarbershop.com/" class="footer__link">
+								<a href="https://www.nilestylebarbershop.com/" class="footer__link">
 									Nile Style Barbershop
 								</a>
 							</li>
@@ -307,7 +266,7 @@
 					</div>
 				</div>
 				<div class="footer__rights">
-					<p class="footer__copy">&copy; 2025 THE NEW HARLEM RENAISSANCE, LLC. All rights reserved.</p>
+					<p class="footer__copy">&copy; <span id="footer-year"></span> THE NEW HARLEM RENAISSANCE, LLC. All rights reserved.</p>
 				</div>
 			</div>
 		</footer>

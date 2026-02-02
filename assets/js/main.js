@@ -39,7 +39,7 @@ function scrollHeaderAndCheckVip() {
     const navLogo = document.getElementById("navLogo");
 
     // If the scroll is greater than 100 viewport height
-    if (this.scrollY >= 80) {
+    if (window.scrollY >= 80) {
         // Add the scroll-header class to the header tag
         header.classList.add("scroll-header");
 
@@ -100,7 +100,7 @@ const headerHeight = document.getElementById("header").offsetHeight;
 function scrollUp() {
     const scrollUp = document.getElementById("scroll-up");
     // When the scroll is higher than 200 viewport height
-    if (this.scrollY >= 200 + headerHeight)
+    if (window.scrollY >= 200 + headerHeight)
         //add the show-scroll class to the a tag
         scrollUp.classList.add("show-scroll");
     // else remove
@@ -199,4 +199,8 @@ if (form) {
     });
 }
 
-/*==========  SCROLL REVEAL ANIMATION ========== */
+/*==========  DYNAMIC FOOTER YEAR ========== */
+const footerYear = document.getElementById("footer-year");
+if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
+}
