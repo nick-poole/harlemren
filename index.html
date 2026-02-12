@@ -44,7 +44,122 @@
 		<meta name="msapplication-TileColor" content="#8c8c8c" />
 		<meta name="theme-color" content="#ffffff" />
 
-		<!--=============== REMIXICONS ===============-->
+		<!--=============== STRUCTURED DATA ===============-->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "LocalBusiness",
+				"@id": "https://www.newharlemrenaissance.com/#business",
+				"name": "The New Harlem Renaissance",
+				"description": "Elite grooming services by Master Barber Kennard Perry in Northeast Baltimore. Precision cuts, beard sculpting, and premium facial treatments.",
+				"url": "https://www.newharlemrenaissance.com",
+				"telephone": "+1-410-444-9411",
+				"email": "kennard@newharlemrenaissance.com",
+				"image": "https://www.newharlemrenaissance.com/assets/images/k-perry-prof.jpg",
+				"logo": "https://www.newharlemrenaissance.com/assets/images/logos/tnhr.jpg",
+				"priceRange": "$$",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Baltimore",
+					"addressRegion": "MD",
+					"postalCode": "21214",
+					"addressCountry": "US"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": 39.3631,
+					"longitude": -76.5549
+				},
+				"sameAs": [
+					"https://www.facebook.com/people/The-New-Harlem-Renaissance/100054280191413/",
+					"https://www.instagram.com/thenewharlemrenaissance/",
+					"https://www.linkedin.com/in/kennard-perry-85123648/",
+					"https://booksy.com/en-us/dl/show-business/1071857"
+				],
+				"founder": {
+					"@type": "Person",
+					"@id": "https://www.newharlemrenaissance.com/#founder"
+				},
+				"hasOfferCatalog": {
+					"@type": "OfferCatalog",
+					"name": "Grooming Services",
+					"itemListElement": [
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "The Classic Harlem",
+								"description": "A basic cut of any style with a razor shape up, beard trim, shape and sculpt, and a hot towel service."
+							}
+						},
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "The Renaissance Man",
+								"description": "The all-encompassing experience with everything in The Classic plus a basic facial, mask, and hot towel service."
+							}
+						},
+						{
+							"@type": "Offer",
+							"itemOffered": {
+								"@type": "Service",
+								"name": "The Self Care Sanctuary",
+								"description": "The ultimate grooming experience including steam facial, charcoal mask, hair bump removal, facial extractions, beard wash, shape, and sculpt."
+							}
+						}
+					]
+				}
+			},
+			{
+				"@type": "Person",
+				"@id": "https://www.newharlemrenaissance.com/#founder",
+				"name": "Kennard Perry",
+				"jobTitle": "Master Barber",
+				"description": "NYC native and Morgan State University graduate with 25+ years of barbering experience. Founder of The New Harlem Renaissance and the AUSOME CUTS program.",
+				"image": "https://www.newharlemrenaissance.com/assets/images/k-perry-prof.webp",
+				"url": "https://www.newharlemrenaissance.com",
+				"sameAs": [
+					"https://www.linkedin.com/in/kennard-perry-85123648/",
+					"https://www.amazon.com/Art-Branding-Kennard-Perry/dp/1974443841"
+				],
+				"alumniOf": {
+					"@type": "CollegeOrUniversity",
+					"name": "Morgan State University"
+				},
+				"worksFor": {
+					"@type": "LocalBusiness",
+					"@id": "https://www.newharlemrenaissance.com/#business"
+				}
+			},
+			{
+				"@type": "WebSite",
+				"@id": "https://www.newharlemrenaissance.com/#website",
+				"name": "The New Harlem Renaissance",
+				"url": "https://www.newharlemrenaissance.com",
+				"description": "Elite grooming services by Master Barber Kennard Perry in Northeast Baltimore.",
+				"publisher": {
+					"@type": "LocalBusiness",
+					"@id": "https://www.newharlemrenaissance.com/#business"
+				}
+			},
+			{
+				"@type": "Book",
+				"name": "The Art of Branding",
+				"author": {
+					"@type": "Person",
+					"@id": "https://www.newharlemrenaissance.com/#founder"
+				},
+				"url": "https://www.amazon.com/Art-Branding-Kennard-Perry/dp/1974443841",
+				"image": "https://m.media-amazon.com/images/I/71mulIt0WZL._SY466_.jpg"
+			}
+		]
+	}
+	</script>
+
+	<!--=============== REMIXICONS ===============-->
 		<link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 		<noscript><link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" /></noscript>
 
@@ -144,7 +259,7 @@
 						<a
 							href="https://booksy.com/en-us/dl/show-business/1071857"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							class="home__social-button button">
 							Book Now
 						</a>
@@ -152,7 +267,7 @@
 						<a
 							href="https://www.facebook.com/people/The-New-Harlem-Renaissance/100054280191413/"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							class="home__social-link"
 							aria-label="Visit New Harlem Renaissance on Facebook">
 							<i class="ri-facebook-box-fill home__social-icon"></i>
@@ -161,7 +276,7 @@
 						<a
 							href="https://www.instagram.com/thenewharlemrenaissance/?hl=en"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							class="home__social-link"
 							aria-label="Check out New Harlem Renaissance on Instagram">
 							<i class="ri-instagram-fill home__social-icon"></i>
@@ -170,7 +285,7 @@
 						<a
 							href="https://www.linkedin.com/in/kennard-perry-85123648/"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							class="home__social-link"
 							aria-label="Check out Master Barber Kennard Perry on LinkedIn">
 							<i class="ri-linkedin-box-fill home__social-icon"></i>
@@ -254,7 +369,7 @@
 						<a
 							href="https://booksy.com/en-us/dl/show-business/1071857"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							class="about__button button">
 							Book Now
 						</a>
@@ -324,11 +439,14 @@
 						<a
 							href="https://www.nilestylebarbershop.com/"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							class="content-link">
 							Nile Style Barbershop
 						</a>
 						in Northeast Baltimore, bringing his vision and expertise to clients daily.
+						Perry is also the founder of
+						<a href="ausome-cuts.html" class="content-link">AUSOME CUTS</a>,
+						a mobile, sensory-friendly haircut program for neurodivergent children in Baltimore City schools.
 					</p>
 
 					<p class="mto__description par">
@@ -380,7 +498,7 @@
 								<a
 									href="https://www.walgreensbootsalliance.com/news-media/our-stories/vaccine-our-words-baltimore-barber-kennard-perry"
 									target="_blank"
-									rel="noopener"
+									rel="noopener noreferrer"
 									title="The Vaccine, In Our Words. This link opens in a new window."
 									class="">
 									The Vaccine, In Our Words
@@ -416,7 +534,7 @@
 							<a
 								href="https://www.amazon.com/Art-Branding-Kennard-Perry/dp/1974443841"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 								title="Order The Art of Branding on Amazon. This link opens in a new window."
 								class="button book__order-button">
 								Order Now
@@ -718,7 +836,7 @@
 						<a
 							href="https://booksy.com/en-us/dl/show-business/1071857"
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							class="button"
 							id="apt-button"
 							aria-label="Book an Appointment with Kennard on Booksy">
@@ -953,7 +1071,7 @@
 							<a
 								href="https://www.facebook.com/people/The-New-Harlem-Renaissance/100054280191413/"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 								class="footer__social"
 								aria-label="Visit The New Harlem Renaissance on Facebook">
 								<i class="ri-facebook-box-fill"></i>
@@ -961,7 +1079,7 @@
 							<a
 								href="https://www.instagram.com/thenewharlemrenaissance/?hl=en"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 								class="footer__social"
 								aria-label="Check out New Harlem Renaissance on Instagram">
 								<i class="ri-instagram-fill"></i>
@@ -970,7 +1088,7 @@
 							<a
 								href="https://www.linkedin.com/in/kennard-perry-85123648/"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 								class="footer__social"
 								aria-label="Check out Master Barber Kennard Perry on LinkedIn">
 								<i class="ri-linkedin-box-fill"></i>
@@ -1004,17 +1122,17 @@
 
 						<ul>
 							<li class="footer__item">
-								<a href="https://www.nilestylebarbershop.com/" class="footer__link">
+								<a href="https://www.nilestylebarbershop.com/" target="_blank" rel="noopener noreferrer" class="footer__link">
 									Nile Style Barbershop
 								</a>
 							</li>
 
 							<li class="footer__item">
-								<a href="https://booksy.com/en-us/" class="footer__link">Booksy</a>
+								<a href="https://booksy.com/en-us/" target="_blank" rel="noopener noreferrer" class="footer__link">Booksy</a>
 							</li>
 
 							<li class="footer__item">
-								<a href="https://nickpoole.dev/" class="footer__link">Webmaster</a>
+								<a href="https://nickpoole.dev/" target="_blank" rel="noopener noreferrer" class="footer__link">Webmaster</a>
 							</li>
 						</ul>
 					</div>
