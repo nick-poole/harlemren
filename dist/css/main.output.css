@@ -1251,6 +1251,37 @@ textarea:not(:placeholder-shown) + .fieldset__label {
   border: none;
 }
 
+/*========== SUBPAGE LAYOUT ==========*/
+.subpage {
+  padding-top: calc(var(--header-height) + 1rem);
+}
+
+.breadcrumb {
+  max-width: 968px;
+  margin: 0 auto var(--mb-1) auto;
+  padding: 0 var(--mb-1);
+  font-size: var(--small-font-size);
+}
+.breadcrumb__list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.breadcrumb__separator {
+  color: var(--acc-color);
+}
+.breadcrumb__link {
+  color: var(--text-color);
+}
+.breadcrumb__link:hover {
+  color: var(--sec-color);
+}
+.breadcrumb__current {
+  color: var(--sec-text-color);
+  font-weight: var(--font-semi-bold);
+}
+
 /*========== AUSOME CUTS ==========*/
 #ausomeCuts {
   margin-top: 6rem;
@@ -1609,3 +1640,5 @@ textarea:not(:placeholder-shown) + .fieldset__label {
     max-width: 757px;
   }
 }
+
+/*# sourceMappingURL=main.output.css.map */
