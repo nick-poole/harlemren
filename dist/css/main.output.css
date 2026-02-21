@@ -1251,6 +1251,11 @@ textarea:not(:placeholder-shown) + .fieldset__label {
   border: none;
 }
 
+/*========== SUBPAGE LAYOUT ==========*/
+.subpage {
+  padding-top: calc(var(--header-height) + 1rem);
+}
+
 /*========== AUSOME CUTS ==========*/
 #ausomeCuts {
   margin-top: 6rem;
@@ -1609,3 +1614,5 @@ textarea:not(:placeholder-shown) + .fieldset__label {
     max-width: 757px;
   }
 }
+
+/*# sourceMappingURL=main.output.css.map */
