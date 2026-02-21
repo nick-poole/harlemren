@@ -127,9 +127,6 @@
 		<link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 		<noscript><link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" /></noscript>
 
-		<!--=============== SWIPER CSS ===============-->
-		<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
 		<!--=============== CSS ===============-->
 		<link rel="stylesheet" href="dist/css/main.output.css" />
 	</head>
@@ -208,61 +205,84 @@
 						techniques to cater to individual style and grooming needs.
 					</p>
 
+					<div class="menu__download">
+						<a
+							href="menu.pdf"
+							target="_blank"
+							class="button"
+							id="menu-download"
+							aria-label="Download The New Harlem Renaissance Menu. This link opens in a new tab.">
+							Download Pricelist
+						</a>
+					</div>
+
 					<!--============= SIGNATURE EXPERIENCES =============-->
 					<h2 class="section__title menu__title">Signature Experiences</h2>
 
-					<div class="swiper-container container" id="theClassic">
-						<div class="swiper-wrapper">
-							<!--==================== EXPERIENCE 1 ====================-->
-							<div class="service__card swiper-slide">
+					<div class="experience__grid">
+						<div class="experience__card">
+							<div class="experience__img-wrapper">
 								<img
 									src="assets/images/budgeron-bach_classic-harlem.webp"
 									alt="Man receiving a classic haircut in a barbershop"
-									class="service__img si-1" />
-								<div class="service__data">
-									<h3 class="service__title">The Classic</h3>
-									<span class="service__description">
-										A nod to tradition. A basic cut of any style with a razor shape up, beard trim,
-										shape and sculpt, and concluding with a relaxing hot towel service.
-									</span>
-								</div>
+									class="experience__img" />
 							</div>
-
-							<!--==================== EXPERIENCE 2 ====================-->
-							<div class="service__card swiper-slide" id="theRenMan">
-								<img
-									src="assets/images/august-de-richelieu.webp"
-									alt="Well-groomed man embodying the Renaissance Man style"
-									class="service__img si-4" />
-								<div class="service__data">
-									<h3 class="service__title">The Renaissance Man</h3>
-									<span class="service__description">
-										The all-encompassing experience. For the man who embodies the spirit of
-										innovation and style. Everything included in The Classic with a basic facial,
-										mask, and hot towel service.
-									</span>
-								</div>
-							</div>
-
-							<!--==================== EXPERIENCE 3 ====================-->
-							<div class="service__card swiper-slide" id="theSCS">
-								<img
-									src="assets/images/scc_collis-3031391.webp"
-									alt="Man relaxing during a premium self-care grooming session"
-									class="service__img si-5" />
-								<div class="service__data">
-									<h3 class="service__title">The Self Care Sanctuary</h3>
-									<span class="service__description">
-										Indulge in the ultimate grooming experience. Includes a steam facial, charcoal
-										mask, hair bump removal, facial extractions, beard wash, shape, and sculpt.
-									</span>
-								</div>
+							<div class="experience__content">
+								<h3 class="experience__name">The Classic Harlem</h3>
+								<span class="experience__price">$50</span>
+								<p class="experience__description">
+									A nod to tradition. A basic cut of any style with a razor shape up, beard trim,
+									shape and sculpt, and concluding with a relaxing hot towel service.
+								</p>
 							</div>
 						</div>
 
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-scrollbar"></div>
+						<div class="experience__card">
+							<div class="experience__img-wrapper">
+								<img
+									src="assets/images/august-de-richelieu.webp"
+									alt="Well-groomed man embodying the Renaissance Man style"
+									class="experience__img" />
+							</div>
+							<div class="experience__content">
+								<h3 class="experience__name">The Renaissance Man</h3>
+								<span class="experience__price">$65</span>
+								<p class="experience__description">
+									The all-encompassing experience. For the man who embodies the spirit of
+									innovation and style. Everything included in The Classic with a basic facial,
+									mask, and hot towel service.
+								</p>
+							</div>
+						</div>
+
+						<div class="experience__card">
+							<div class="experience__img-wrapper">
+								<img
+									src="assets/images/scc_collis-3031391.webp"
+									alt="Man relaxing during a premium self-care grooming session"
+									class="experience__img" />
+							</div>
+							<div class="experience__content">
+								<h3 class="experience__name">The Self Care Sanctuary</h3>
+								<span class="experience__price">$125</span>
+								<p class="experience__description">
+									Indulge in the ultimate grooming experience. Includes a steam facial, charcoal
+									mask, hair bump removal, facial extractions, beard wash, shape, and sculpt.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!--============= BOOK NOW CTA =============-->
+					<div class="menu__download">
+						<a
+							href="https://booksy.com/en-us/dl/show-business/1071857"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="button"
+							aria-label="Book an appointment with Kennard on Booksy">
+							Book Now
+						</a>
 					</div>
 
 					<!--================ MENU ================-->
@@ -393,29 +413,6 @@
 								<span class="menu-price">$125</span>
 							</li>
 						</ul>
-
-						<div class="menu__download">
-							<a
-								href="menu.pdf"
-								target="_blank"
-								class="button"
-								id="menu-download"
-								aria-label="Download The New Harlem Renaissance Menu. This link opens in a new tab.">
-								Download Pricelist
-							</a>
-						</div>
-					</div>
-
-					<!--============= BOOK NOW CTA =============-->
-					<div class="menu__download">
-						<a
-							href="https://booksy.com/en-us/dl/show-business/1071857"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="button"
-							aria-label="Book an appointment with Kennard on Booksy">
-							Book Now
-						</a>
 					</div>
 				</div>
 			</section>
@@ -524,9 +521,6 @@
 		<a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to the top of the page">
 			<i class="ri-arrow-up-circle-line scrollup__icon"></i>
 		</a>
-
-		<!--=============== SWIPER JS ===============-->
-		<script src="assets/js/swiper-bundle.min.js"></script>
 
 		<!--=============== MAIN JS ===============-->
 		<script src="assets/js/main.js"></script>
